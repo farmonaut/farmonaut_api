@@ -423,16 +423,25 @@ and so on.
 
 #### Analysis Scales:
 NDVI: https://farmonaut.com/Images/ndvi_scale.jpg
+
 ![alt text](https://farmonaut.com/Images/ndvi_scale.jpg)
+
 NDRE: https://farmonaut.com/Images/ndre_scale.jpg
+
 ![alt text](https://farmonaut.com/Images/ndre_scale.jpg)
+
 EVI: https://farmonaut.com/Images/evi_scale.jpg
+
 ![alt text](https://farmonaut.com/Images/evi_scale.jpg)
+
 VARI: https://farmonaut.com/Images/vari_scale.jpg
+
 ![alt text](https://farmonaut.com/Images/vari_scale.jpg)
+
 NDWI: https://farmonaut.com/Images/ndwi_scale.jpg
+
 ![alt text](https://farmonaut.com/Images/ndwi_scale.jpg)
+
 HYBRID: https://farmonaut.com/Images/hybrid_scale.jpg
+
 ![alt text](https://farmonaut.com/Images/hybrid_scale.jpg)
-
-
