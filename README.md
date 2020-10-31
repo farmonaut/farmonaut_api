@@ -4,10 +4,26 @@
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
+[![N|Solid](https://i.imgur.com/taBZAWn.png)](https://farmonaut.com/)
 Farmonaut’s Satellite Based Crop Health Monitoring System is built to put satellite technology in the hands of each and every farmer in the most economical way. Our objective is to break the cost barrier and help democratize remote sensing in the farming community.
 
 
-# How to submit a New Farmer Field
+### Platforms
+
+- Android: https://play.google.com/store/apps/details?id=com.farmonaut.android
+- iOS: https://apps.apple.com/us/app/farmonaut/id1489095847
+- Web App: http://farmonaut.com/web-app
+
+### Tutorials
+https://farmonaut.com/web-platform/farmonaut-web-app-tutorial/
+https://farmonaut.com/blogs/remote-sensing/normalized-difference-vegetation-index-ndvi/
+https://farmonaut.com/blogs/remote-sensing/ndvi-vs-ndre-and-their-applications-in-agriculture/
+https://farmonaut.com/blogs/remote-sensing/normalized-difference-water-index-ndwi/
+https://farmonaut.com/ios/farmonaut-ios-app-tutorial/
+
+
+
+### How to submit a New Farmer Field
 
   - Submit a POST REQUEST ON THE FOLLOWING LINK:
 https://us-central1-farmbase-b2f7e.cloudfunctions.net/submitField
@@ -406,9 +422,17 @@ and so on.
 ```
 
 #### Analysis Scales:
-NDVI: "https://farmonaut.com/Images/ndvi_scale.jpg"
-NDRE: "https://farmonaut.com/Images/ndre_scale.jpg"
-EVI: "https://farmonaut.com/Images/evi_scale.jpg"
-VARI: "https://farmonaut.com/Images/vari_scale.jpg"
-NDWI: "https://farmonaut.com/Images/ndwi_scale.jpg"
-HYBRID: "https://farmonaut.com/Images/hybrid_scale.jpg"
+NDVI: https://farmonaut.com/Images/ndvi_scale.jpg
+![alt text](https://farmonaut.com/Images/ndvi_scale.jpg)
+NDRE: https://farmonaut.com/Images/ndre_scale.jpg
+![alt text](https://farmonaut.com/Images/ndre_scale.jpg)
+EVI: https://farmonaut.com/Images/evi_scale.jpg
+![alt text](https://farmonaut.com/Images/evi_scale.jpg)
+VARI: https://farmonaut.com/Images/vari_scale.jpg
+![alt text](https://farmonaut.com/Images/vari_scale.jpg)
+NDWI: https://farmonaut.com/Images/ndwi_scale.jpg
+![alt text](https://farmonaut.com/Images/ndwi_scale.jpg)
+HYBRID: https://farmonaut.com/Images/hybrid_scale.jpg
+![alt text](https://farmonaut.com/Images/hybrid_scale.jpg)
+
+
