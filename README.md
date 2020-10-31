@@ -32,17 +32,18 @@ UID: unique Identifier provided to your organization
 }
 ```
 ### Defintions
->Points == All the boundary points of the field in a clock-wise/counter-clock wise order
-a == First Point of the field
-P_x == (x+1)th point of the field, where x = 1,2,3,...
-Each Field Point is a JSON Object:
+1. Points == All the boundary points of the field in a clock-wise/counter-clock wise order
+2. a == First Point of the field
+3. P_x == (x+1)th point of the field, where x = 1,2,3,...
+4. Each Field Point is a JSON Object:
+```sh
 P_x:{
   Latitude: latitude_value,
   Longitude: longitude_value
   }
-
->PaymentType == Number of months the satellite monitoring is activated for.
-CropCode = The code of the crop sown in the field
+```
+5. PaymentType == Number of months the satellite monitoring is activated for.
+6. CropCode = The code of the crop sown in the field
 
 ### Response
 
@@ -56,7 +57,7 @@ Upon successful submission:
 
 ### Errors: 
 {errorDescription: errorD}
->errorDescriptions
+errorDescriptions
 1: invalid points format
 2: Invalid Payment Type
 3: Invalid crop code
@@ -269,36 +270,6 @@ Submit a request in the following JSON Format:
     "UID" : "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
     "URI" : "https://lh6.googleusercontent.com/-lsH7M4Gr5wg/AAAAAAAAAAI/AAAAAAAAABM/eNUASvhfjs4/s96-c/photo.jpg",
     "Weather" : {
-      "20201025" : {
-        "cloud_cover" : 0,
-        "humidity" : 90,
-        "max_temp" : 281.48,
-        "min_temp" : 279.82,
-        "pressure" : 1014,
-        "station" : "Polepy",
-        "wind_deg" : 90,
-        "wind_speed" : 0.45
-      },
-      "20201026" : {
-        "cloud_cover" : 100,
-        "humidity" : 83,
-        "max_temp" : 285.93,
-        "min_temp" : 281.48,
-        "pressure" : 1005,
-        "station" : "Polepy",
-        "wind_deg" : 315,
-        "wind_speed" : 0.45
-      },
-      "20201027" : {
-        "cloud_cover" : 99,
-        "humidity" : 80,
-        "max_temp" : 280.93,
-        "min_temp" : 279.26,
-        "pressure" : 1010,
-        "station" : "Polepy",
-        "wind_deg" : 272,
-        "wind_speed" : 0.89
-      },
       "20201028" : {
         "cloud_cover" : 100,
         "humidity" : 79,
@@ -336,23 +307,23 @@ Submit a request in the following JSON Format:
 
 ### Definitions
 
->CenterLat == latitude value of the center of the field
-CenterLong == longitude value of the center of the field
-Expiring == whether field is expiring or not
-FailedDays == days on which satellite could not capture data due to cloud cover
-FieldAddress == Address of the location of the field
-FieldArea == area of the field in sqaure meters
-FieldID == uniqueID of the field
-FieldMaxLat == maximum latitude value of all the field points
-FieldMinLat == minimum latitude value of all the field points
-FieldMaxLong == maximum longitude value of all the field points
-FieldMinLong == minimum longitude value of all the field points
-Health == value of indexes on different satellite visit dates (range from 0 to 100)
-OrderDate == date on which field was added
-PaymentType == number of months for which satellite monitoring is activated for the field
-SensedDays == days on which satellite was successfully able to capture the satellite date (yyyymmdd)
-UID == unique identifier of your organization
-Weather == weather from the weather station nearest to the field.
+1. CenterLat == latitude value of the center of the field
+2. CenterLong == longitude value of the center of the field
+3. Expiring == whether field is expiring or not
+4. FailedDays == days on which satellite could not capture data due to cloud cover
+5. FieldAddress == Address of the location of the field
+6. FieldArea == area of the field in sqaure meters
+7. FieldID == uniqueID of the field
+8. FieldMaxLat == maximum latitude value of all the field points
+9. FieldMinLat == minimum latitude value of all the field points
+10. FieldMaxLong == maximum longitude value of all the field points
+11. FieldMinLong == minimum longitude value of all the field points
+11. Health == value of indexes on different satellite visit dates (range from 0 to 100)
+12. OrderDate == date on which field was added
+13. PaymentType == number of months for which satellite monitoring is activated for the field
+14. SensedDays == days on which satellite was successfully able to capture the satellite date (yyyymmdd)
+15. UID == unique identifier of your organization
+16. Weather == weather from the weather station nearest to the field.
 
 
 | Crop | CropCode |
@@ -387,7 +358,35 @@ Weather == weather from the weather station nearest to the field.
 
 Create a Reference Link:
 ```sh
-gs://farmbase-b2f7e.appspot.com/PaidMonitoredFields/UID/fieldID/sensedDay/imageType
+final FirebaseStorage storage = FirebaseStorage.getInstance();
+final StorageReference storageRef = storage.getReference();
+final StorageReference gsReference = new StorageReference();
+gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).child(sensedDay).child(imageType);
+```
+#### ImageTypes:
+
+| Image Name | imageType |
+| ------ | ------ |
+| NDVI | ndvi |
+| NDWI | ndwi |
+| EVI | evi |
+| NDRE | ndre |
+| VARI | vari
+| SOC | soc |
+| TCI | tci |
+| ETCI | etci |
+| HYBRID | hybrid |
+
+
+
+### To Retrieve a Field Report
+
+Create a Reference Link:
+```sh
+final FirebaseStorage storage = FirebaseStorage.getInstance();
+final StorageReference storageRef = storage.getReference();
+final StorageReference gsReference = new StorageReference();
+gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).child(sensedDay).child(report.pdf);
 ```
 
 
@@ -395,6 +394,21 @@ gs://farmbase-b2f7e.appspot.com/PaidMonitoredFields/UID/fieldID/sensedDay/imageT
 
 Create a Reference Link:
 ```sh
-gs://farmbase-b2f7e.appspot.com/PaidMonitoredFields/UID/fieldID/sensedDay/index_imageType
+final FirebaseStorage storage = FirebaseStorage.getInstance();
+final StorageReference storageRef = storage.getReference();
+final StorageReference gsReference = new StorageReference();
+gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).child(sensedDay).child(imageType_index);
+
+example: 
+for NDVI, imageType_index = ndvi_pie
+for NDRE, imageType_index = ndre_pie
+and so on.
 ```
 
+#### Analysis Scales:
+NDVI: "https://farmonaut.com/Images/ndvi_scale.jpg"
+NDRE: "https://farmonaut.com/Images/ndre_scale.jpg"
+EVI: "https://farmonaut.com/Images/evi_scale.jpg"
+VARI: "https://farmonaut.com/Images/vari_scale.jpg"
+NDWI: "https://farmonaut.com/Images/ndwi_scale.jpg"
+HYBRID: "https://farmonaut.com/Images/hybrid_scale.jpg"
