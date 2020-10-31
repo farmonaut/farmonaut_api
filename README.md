@@ -15,11 +15,11 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 - Web App: http://farmonaut.com/web-app
 
 ### Tutorials
-https://farmonaut.com/web-platform/farmonaut-web-app-tutorial/
-https://farmonaut.com/blogs/remote-sensing/normalized-difference-vegetation-index-ndvi/
-https://farmonaut.com/blogs/remote-sensing/ndvi-vs-ndre-and-their-applications-in-agriculture/
-https://farmonaut.com/blogs/remote-sensing/normalized-difference-water-index-ndwi/
-https://farmonaut.com/ios/farmonaut-ios-app-tutorial/
+- https://farmonaut.com/web-platform/farmonaut-web-app-tutorial/
+- https://farmonaut.com/blogs/remote-sensing/normalized-difference-vegetation-index-ndvi/
+- https://farmonaut.com/blogs/remote-sensing/ndvi-vs-ndre-and-their-applications-in-agriculture/
+- https://farmonaut.com/blogs/remote-sensing/normalized-difference-water-index-ndwi/
+- https://farmonaut.com/ios/farmonaut-ios-app-tutorial/
 
 
 
