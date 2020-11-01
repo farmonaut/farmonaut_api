@@ -46,7 +46,41 @@ PaymentType:6,
 CropCode:,
 UID: unique Identifier provided to your organization
 }
+
+
 ```
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"Points": {
+		"a": {
+			"Latitude": 12.975601039033629,
+			"Longitude": 77.76385936886072
+		},
+		"P_1": {
+			"Latitude": 12.980210619777425,
+			"Longitude": 77.76523131877184
+		},
+		"P_2": {
+			"Latitude": 12.9802524385325,
+			"Longitude": 77.76818878948689
+		},
+		"P_3": {
+			"Latitude": 12.976061053481807,
+			"Longitude": 77.768659517169
+		},
+		"P_4": {
+			"Latitude": 12.975984275561343,
+			"Longitude": 77.76420503854752
+		}
+	},
+	"CropCode": "1r",
+	"PaymentType": 6
+}
+```
+
 ### Defintions
 1. Points == All the boundary points of the field in a clock-wise/counter-clock wise order
 2. a == First Point of the field
@@ -67,7 +101,7 @@ Upon successful submission:
 ```sh
 
 {FieldID: uniqueIdentifier of the field}
-//save this in the database of your user, and use this to access the satellite data
+//save this in the database of your user, and use this to access the satellite data of this field
 
 ```
 
@@ -77,15 +111,31 @@ errorDescriptions
 1: invalid points format
 2: Invalid Payment Type
 3: Invalid crop code
+4: Invalid UID
 
-### How to Retreive Farmer Data
+
+
+
+### How to Retreive All Farmers Data
 
 Submit A POST REQUEST ON THE FOLLOWING LINK:
-(https://us-central1-farmbase-b2f7e.cloudfunctions.net/getField)
+(https://us-central1-farmbase-b2f7e.cloudfunctions.net/getAllFarmersData)
 
 Submit a request in the following JSON Format:
 ```sh
-{fieldID: fieldID,
+{UID: UID
+}
+```
+
+
+### How to Retreive A Single Farmer's Data
+
+Submit A POST REQUEST ON THE FOLLOWING LINK:
+(https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFarmerData)
+
+Submit a request in the following JSON Format:
+```sh
+{FieldID: fieldID,
     UID: UID
 }
 ```
@@ -270,6 +320,15 @@ Submit a request in the following JSON Format:
         "20201025" : "31"
       }
     },
+    "Yield":{
+        "20200912" : "24",
+        "20200917" : "32",
+        "20200920" : "20",
+        "20200922" : "20",
+        "20201002" : "42",
+        "20201022" : "63",
+        "20201025" : "61"
+    }
     "Name" : "Farmonaut Support",
     "OrderDate" : "19-September-2020",
     "Paid" : "Yes",
@@ -345,7 +404,7 @@ Submit a request in the following JSON Format:
 | Crop | CropCode |
 | ------ | ------ |
 | Rice (Kharif) | 1k |
-| Rice (Rabi) | [1r |
+| Rice (Rabi) | 1r |
 | Wheat | 2r |
 | Coarse Cereals (Kharif) | 3k |
 | Coarse Cereals (Rabi) | 3r |
@@ -372,6 +431,7 @@ Submit a request in the following JSON Format:
 
 ### To Retrieve a Field Image
 
+![alt text](https://i.ytimg.com/vi/DLx9-qMMRy8/hqdefault.jpg)
 Create a Reference Link:
 ```sh
 final FirebaseStorage storage = FirebaseStorage.getInstance();
@@ -397,6 +457,8 @@ gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).
 
 ### To Retrieve a Field Report
 
+![alt text](https://secureservercdn.net/160.153.137.14/ox4.27a.myftpupload.com/wp-content/uploads/2019/12/reportScreen.jpg)
+
 Create a Reference Link:
 ```sh
 final FirebaseStorage storage = FirebaseStorage.getInstance();
@@ -407,6 +469,8 @@ gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).
 
 
 ### To Retrieve a Field Area Index Image
+
+![alt text](https://firebasestorage.googleapis.com/v0/b/farmbase-b2f7e.appspot.com/o/PaidMonitoredFields%2FFnXlVukcRvYd28FhZsEM7BTMAPv1%2F1601277947835%2F20201031%2Fndvi_pie?alt=media&token=4d9acab5-e441-4098-98f8-1c319e25ac4c)
 
 Create a Reference Link:
 ```sh
