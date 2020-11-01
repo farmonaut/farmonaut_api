@@ -15,6 +15,11 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 - #### 10000 Hectare Units: Rs.12500/- (https://rzp.io/l/farmonaut10000)
 - #### 25000 Hectare Units: Rs.20000/- (https://rzp.io/l/farmonaut25000)
 
+Once a payment is made, you will receive a unique user id (UID) on your provided email address within 48 hours. With this unique user id (UID), you can start using Farmonaut's API.
+
+##### DO NOT SHARE THIS UID WITH ANYONE. KEEP IT SECURE AND CONFIDENTIAL.
+
+
 ### What is a Hectare Unit?
 - A hectare unit is defined as a single satellite observation of 1 hectare of land. Example: if total 6 successful satellite observations are captured for an area of 1 hectare, the hectare units consumed from the subscription will be 1*6 = 6 hectare units.
 
