@@ -1,4 +1,4 @@
-# Farmonaut API
+# Farmonaut Satellite & Weather API
 
 [![N|Solid](https://i.imgur.com/EJSNAlm.jpg)](https://farmonaut.com/)
 
