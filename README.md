@@ -144,6 +144,17 @@ Submit a request in the following JSON Format:
 ```
 
 
+### How to Retreive My Usage Data
+
+Submit A POST REQUEST ON THE FOLLOWING LINK:
+(https://us-central1-farmbase-b2f7e.cloudfunctions.net/getMyUsage)
+
+Submit a request in the following JSON Format:
+```sh
+{UID: UID
+}
+```
+
 ### How to Retreive A Single Farmer's Data
 
 Submit A POST REQUEST ON THE FOLLOWING LINK:
@@ -280,6 +291,7 @@ Submit a request in the following JSON Format:
     "FieldMinLat" : 50.5033656817402,
     "FieldMinLong" : 14.274377954739371,
     "GenTif" : "yes",
+    "hUnits" : 119,
     "Health" : {
       "evi" : {
         "20200912" : "60",
@@ -415,6 +427,7 @@ Submit a request in the following JSON Format:
 14. SensedDays == days on which satellite was successfully able to capture the satellite date (yyyymmdd)
 15. UID == unique identifier of your organization
 16. Weather == weather from the weather station nearest to the field.
+17. hUnits == Number of hectare units utilized for this field
 
 
 | Crop | CropCode |
@@ -443,18 +456,10 @@ Submit a request in the following JSON Format:
 | Onion | 17 |
 | Coconut | 18 |
 | Tobacco | 19 |
+| Other | 999 |
 
 
-### To Retrieve a Field Image
 
-![alt text](https://i.ytimg.com/vi/DLx9-qMMRy8/hqdefault.jpg)
-Create a Reference Link:
-```sh
-final FirebaseStorage storage = FirebaseStorage.getInstance();
-final StorageReference storageRef = storage.getReference();
-final StorageReference gsReference = new StorageReference();
-gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).child(sensedDay).child(imageType);
-```
 #### ImageTypes:
 
 | Image Name | imageType |
@@ -469,31 +474,62 @@ gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).
 | ETCI | etci |
 | HYBRID | hybrid |
 
+### How to Retrieve a Field Image
 
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImage
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+	"SensedDay": "20201025",
+	"ImageType": "ndvi",
+	"Colormap": "1" (optional values can be 1 or 2)
+}
+```
+### Response
+You will get a URL of this field image.
 
 ### To Retrieve a Field Report
 
 ![alt text](https://secureservercdn.net/160.153.137.14/ox4.27a.myftpupload.com/wp-content/uploads/2019/12/reportScreen.jpg)
 
-Create a Reference Link:
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldReport
+
+### Example Request Obj
 ```sh
-final FirebaseStorage storage = FirebaseStorage.getInstance();
-final StorageReference storageRef = storage.getReference();
-final StorageReference gsReference = new StorageReference();
-gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).child(sensedDay).child(report.pdf);
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+	"SensedDay": "20201025"
+}
 ```
+### Response
+You will get a URL of this field report.
 
 
 ### To Retrieve a Field Area Index Image
 
 ![alt text](https://firebasestorage.googleapis.com/v0/b/farmbase-b2f7e.appspot.com/o/PaidMonitoredFields%2FFnXlVukcRvYd28FhZsEM7BTMAPv1%2F1601277947835%2F20201031%2Fndvi_pie?alt=media&token=4d9acab5-e441-4098-98f8-1c319e25ac4c)
 
-Create a Reference Link:
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldIndexAreaImage
+
+### Example Request Obj
 ```sh
-final FirebaseStorage storage = FirebaseStorage.getInstance();
-final StorageReference storageRef = storage.getReference();
-final StorageReference gsReference = new StorageReference();
-gsReference = storageRef.child("PaidMonitoredFields").child(uid).child(fieldID).child(sensedDay).child(imageType_index);
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+	"SensedDay": "20201025",
+	"ImageType": "ndvi"
+}
+```
+### Response
+You will get a URL of this field index area image.
 
 example: 
 for NDVI, imageType_index = ndvi_pie
