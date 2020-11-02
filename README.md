@@ -512,13 +512,9 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldIndexAreaImage
 ### Response
 You will get a URL of this field index area image.
 
-example: 
-for NDVI, imageType_index = ndvi_pie
-for NDRE, imageType_index = ndre_pie
-and so on.
-```
 
 #### Analysis Scales:
+
 NDVI: https://farmonaut.com/Images/ndvi_scale.jpg
 
 ![alt text](https://farmonaut.com/Images/ndvi_scale.jpg)
