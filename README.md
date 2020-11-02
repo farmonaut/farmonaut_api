@@ -46,25 +46,6 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/submitField
 
 
 Submit a request in the JSON Format
-```sh
-{Points:{
-  a:{Latitude:0,
-	Longitude:0
-  },
-	P_1:{Latitude:0,
-	Longitude:0
-  },
-	.
-	.
-	.
-},
-PaymentType:6,
-CropCode:,
-UID: unique Identifier provided to your organization
-}
-
-
-```
 
 ### Example Request Obj
 ```sh
