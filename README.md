@@ -12,19 +12,19 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 
 | Image Name | imageType |
 | ------ | ------ |
-| NDVI | ndvi |
-| NDWI | ndwi |
-| EVI | evi |
-| NDRE | ndre |
-| VARI | vari
-| SAVI | savi |
-| AVI | avi
-| BSI | bsi |
-| SI | si |
-| SOC | soc |
-| TCI | tci |
-| ETCI | etci |
-| HYBRID | hybrid |
+| NDVI: Normalized Difference Vegetation Index | ndvi |
+| NDWI: Normalized Difference Water Index | ndwi |
+| EVI: Enhanced Vegetation Index | evi |
+| NDRE: Normalized Difference Red Edge | ndre |
+| VARI: Visible Atmospherically Resistant Index | vari
+| SAVI: Soil Adjusted Vegetation Index | savi |
+| AVI: Advanced Vegetation Index | avi
+| BSI: Bare Soil Index | bsi |
+| SI: Shadow Index | si |
+| SOC: Soil Organic carbon | soc |
+| TCI: True color image | tci |
+| ETCI: Enhanced true color image | etci |
+| HYBRID: Hybrid Image | hybrid |
 
 [![N|Solid](https://secureservercdn.net/160.153.137.14/ox4.27a.myftpupload.com/wp-content/uploads/2020/11/farmonaut_api.jpg)](https://farmonaut.com/)
 
