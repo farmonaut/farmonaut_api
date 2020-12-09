@@ -10,21 +10,21 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 
 #### ImageTypes:
 
-| Image Name | imageType |
+| Image Name | Resolution |
 | ------ | ------ |
-| NDVI: Normalized Difference Vegetation Index | ndvi |
-| NDWI: Normalized Difference Water Index | ndwi |
-| EVI: Enhanced Vegetation Index | evi |
-| NDRE: Normalized Difference Red Edge | ndre |
-| VARI: Visible Atmospherically Resistant Index | vari
-| SAVI: Soil Adjusted Vegetation Index | savi |
-| AVI: Advanced Vegetation Index | avi
-| BSI: Bare Soil Index | bsi |
-| SI: Shadow Index | si |
-| SOC: Soil Organic carbon | soc |
-| TCI: True color image | tci |
-| ETCI: Enhanced true color image | etci |
-| HYBRID: Hybrid Image | hybrid |
+| NDVI: Normalized Difference Vegetation Index | 10 meters/pixel |
+| NDWI: Normalized Difference Water Index | 20 meters/pixel |
+| EVI: Enhanced Vegetation Index | 10 meters/pixel |
+| NDRE: Normalized Difference Red Edge | 20 meters/pixel |
+| VARI: Visible Atmospherically Resistant Index | 10 meters/pixel
+| SAVI: Soil Adjusted Vegetation Index | 10 meters/pixel |
+| AVI: Advanced Vegetation Index | 10 meters/pixel
+| BSI: Bare Soil Index | 10 meters/pixel |
+| SI: Shadow Index | 10 meters/pixel |
+| SOC: Soil Organic carbon | 10 meters/pixel |
+| TCI: True color image | 10 meters/pixel |
+| ETCI: Enhanced true color image | 10 meters/pixel |
+| HYBRID: Hybrid Image | 20 meters/pixel |
 
 [![N|Solid](https://secureservercdn.net/160.153.137.14/ox4.27a.myftpupload.com/wp-content/uploads/2020/11/farmonaut_api.jpg)](https://farmonaut.com/)
 
