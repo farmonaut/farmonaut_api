@@ -483,6 +483,8 @@ Submit a request in the following JSON Format:
   - Submit a POST REQUEST ON THE FOLLOWING LINK:
 https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImage
 
+Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
 ### Example Request Obj
 ```sh
 {
@@ -515,6 +517,8 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldReport
 ### Response
 You will get a URL of this field report.
 
+Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
 
 ### To Retrieve a Field Area Index Image
 
@@ -534,6 +538,8 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldIndexAreaImage
 ```
 ### Response
 You will get a URL of this field index area image.
+
+Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
 
 #### Analysis Scales:
