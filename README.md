@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 [![N|Solid](https://i.imgur.com/taBZAWn.png)](https://farmonaut.com/)
-Farmonaut’s Satellite Based Crop Health Monitoring System is built to put satellite technology in the hands of each and every farmer in the most economical way. Our objective is to break the cost barrier and help democratize remote sensing in the farming community. Satellite Data is updated every 3 to 5 days.
+Farmonaut’s Satellite Based Crop Health Monitoring System is built to put satellite technology in the hands of each and every farmer in the most economical way. Our objective is to break the cost barrier and help democratize remote sensing in the farming community. Satellite Data is updated every 2 to 5 days.
 
 
 #### ImageTypes:
@@ -15,6 +15,7 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 | NDVI: Normalized Difference Vegetation Index | 10 meters/pixel |
 | NDWI: Normalized Difference Water Index | 20 meters/pixel |
 | EVI: Enhanced Vegetation Index | 10 meters/pixel |
+| RVI: Radar Vegetation Index | 10 meters/pixel |
 | NDRE: Normalized Difference Red Edge | 20 meters/pixel |
 | VARI: Visible Atmospherically Resistant Index | 10 meters/pixel
 | SAVI: Soil Adjusted Vegetation Index | 10 meters/pixel |
@@ -370,6 +371,12 @@ Submit a request in the following JSON Format:
       "20201022" : "yes",
       "20201025" : "yes"
     },
+    "SARDays" : {
+      "20200912" : "yes",
+      "20200917" : "yes",
+      "20200920" : "yes",
+      "20200922" : "yes",
+    },
     "UID" : "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
     "URI" : "https://lh6.googleusercontent.com/-lsH7M4Gr5wg/AAAAAAAAAAI/AAAAAAAAABM/eNUASvhfjs4/s96-c/photo.jpg",
     "Weather" : {
@@ -424,7 +431,8 @@ Submit a request in the following JSON Format:
 11. Health == value of indexes on different satellite visit dates (range from 0 to 100)
 12. OrderDate == date on which field was added
 13. PaymentType == number of months for which satellite monitoring is activated for the field
-14. SensedDays == days on which satellite was successfully able to capture the satellite date (yyyymmdd)
+14. SensedDays == days on which satellite was successfully able to capture the satellite data (yyyymmdd)
+15. SARDays == days on which satellite captured the radar vegetation data (yyyymmdd)
 15. UID == unique identifier of your organization
 16. Weather == weather from the weather station nearest to the field.
 17. hUnits == Number of hectare units utilized for this field
@@ -467,6 +475,7 @@ Submit a request in the following JSON Format:
 | NDVI | ndvi |
 | NDWI | ndwi |
 | EVI | evi |
+| RVI | rvi |
 | NDRE | ndre |
 | VARI | vari
 | SAVI | savi |
