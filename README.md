@@ -509,9 +509,11 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImage
 }
 ```
 ### Response
+```sh
 {
 "url":url
 }
+```
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
 
@@ -536,9 +538,11 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImage
 Note:In the SensedDay key, provide the date from the "SARDays" object of the Field Data Object. This is applicable only for radar vegetation images.
 
 ### Response
+```sh
 {
 "url":url
 }
+```
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
 
@@ -557,12 +561,14 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldReport
 	"FieldID": "1600503072436",
 	"SensedDay": "20201025"
 }
+
 ```
 ### Response
+```sh
 {
 "url":url
 }
-
+```
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
 
@@ -582,10 +588,13 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldIndexAreaImage
 	"ImageType": "ndvi"
 }
 ```
+
 ### Response
+```sh
 {
 "url":url
 }
+```
 
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
