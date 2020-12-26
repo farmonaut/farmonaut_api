@@ -599,6 +599,24 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldIndexAreaImage
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
 
+
+### To Retrieve Present Weather Data
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getPresentWeather
+
+### Example Request Obj
+```sh
+{
+	latitude:lat,
+	longitude:lon
+}
+```
+
+### Response
+A JSON object containing current weather information from the nearest weather station
+
+
 #### Analysis Scales:
 
 NDVI: https://farmonaut.com/Images/ndvi_scale.jpg
