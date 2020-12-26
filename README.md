@@ -496,7 +496,7 @@ Submit a request in the following JSON Format:
   - Submit a POST REQUEST ON THE FOLLOWING LINK:
 https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImage
 
-Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
 
 ### Example Request Obj
 ```sh
@@ -509,7 +509,38 @@ Note: replace 'media1' with 'media' at the end of the provided URL in the respon
 }
 ```
 ### Response
-You will get a URL of this field image.
+{
+"url":url
+}
+Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
+
+### How to Retrieve a Radar Vegetation Field Image
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImage
+
+
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+	"SensedDay": "20201025",
+	"ImageType": "rvi",
+	"Colormap": "1" (optional values can be 1 or 2)
+}
+```
+
+Note:In the SensedDay key, provide the date from the "SARDays" object of the Field Data Object. This is applicable only for radar vegetation images.
+
+### Response
+{
+"url":url
+}
+Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
 
 ### To Retrieve a Field Report
 
@@ -528,7 +559,9 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldReport
 }
 ```
 ### Response
-You will get a URL of this field report.
+{
+"url":url
+}
 
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
@@ -550,7 +583,9 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldIndexAreaImage
 }
 ```
 ### Response
-You will get a URL of this field index area image.
+{
+"url":url
+}
 
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
