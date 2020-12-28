@@ -606,10 +606,10 @@ Note: replace 'media1' with 'media' at the end of the provided URL in the respon
 https://us-central1-farmbase-b2f7e.cloudfunctions.net/getPresentWeather
 
 ### Example Request Obj
+
 ```sh
-{
-	latitude:lat,
-	longitude:lon
+{FieldID: fieldID,
+    UID: UID
 }
 ```
 
