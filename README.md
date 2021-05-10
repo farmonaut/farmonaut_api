@@ -559,7 +559,8 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldReport
 {
 	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
 	"FieldID": "1600503072436",
-	"SensedDay": "20201025"
+	"SensedDay": "20201025",
+	"ReportFormat" "PDF"
 }
 
 ```
@@ -568,6 +569,10 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldReport
 {
 "url":url
 }
+```
+
+```sh
+Report Formats: "PDF", "HTML"
 ```
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
