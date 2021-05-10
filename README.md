@@ -5,6 +5,28 @@
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
 [![N|Solid](https://i.imgur.com/taBZAWn.png)](https://farmonaut.com/)
+
+## Table Of Content
+#### [Introduction](#introduction)
+#### [Image Types](#imagetypes)
+#### [Get Your Unique ID and Start Using Farmonaut API](#get-your-unique-id-and-start-using-farmonaut-api)
+#### [What is a Hectare Unit?](#what-is-a-hectare-unit)
+#### [How to submit a New Farmer Field](#how-to-submit-a-new-farmer-field)
+#### [How to modify Field Coordinates of Already Submitted Field](#how-to-modify-field-coordinates-of-already-submitted-field)
+#### [To Pause Field Monitoring](#to-pause-field-monitoring)
+#### [To Resume Field Monitoring](#to-resume-field-monitoring)
+#### [How to Retreive All Farmers Data](#how-to-retreive-all-farmers-data)
+#### [How to Retreive My Usage Data](#how-to-retreive-my-usage-data)
+#### [How to Retreive A Single Farmer's Data](#how-to-retreive-a-single-farmers-data)
+#### [Crop Codes](#crop-codes)
+#### [How to Retrieve a Field Image](#how-to-retrieve-a-field-image)
+#### [How to Retrieve a Radar Vegetation Field Image](#how-to-retrieve-a-radar-vegetation-field-image)
+#### [To Retrieve a Field Report](#to-retrieve-a-field-report)
+#### [To Retrieve a Field Area Index Image](#to-retrieve-a-field-area-index-image)
+#### [To Retrieve Present Weather Data](to-retrieve-present-weather-data)
+#### [Analysis Scales](#analysis-scales)
+
+### Introduction:
 Farmonaut’s Satellite Based Crop Health Monitoring System is built to put satellite technology in the hands of each and every farmer in the most economical way. Our objective is to break the cost barrier and help democratize remote sensing in the farming community. Satellite Data is updated every 2 to 5 days.
 
 
@@ -133,6 +155,75 @@ errorDescriptions
 3: Invalid crop code
 4: Invalid UID
 
+
+
+### How to modify Field Coordinates of Already Submitted Field
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/modifyFieldPoints
+
+
+Submit a request in the JSON Format
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"Points": {
+		"a": {
+			"Latitude": 12.975601039033629,
+			"Longitude": 77.76385936886072
+		},
+		"P_1": {
+			"Latitude": 12.980210619777425,
+			"Longitude": 77.76523131877184
+		},
+		"P_2": {
+			"Latitude": 12.9802524385325,
+			"Longitude": 77.76818878948689
+		},
+		"P_3": {
+			"Latitude": 12.976061053481807,
+			"Longitude": 77.768659517169
+		},
+		"P_4": {
+			"Latitude": 12.975984275561343,
+			"Longitude": 77.76420503854752
+		}
+	},
+	"FieldID": "1637947932892",
+}
+```
+
+### Defintions
+1. Points == All the boundary points of the field in a clock-wise/counter-clock wise order
+2. a == First Point of the field
+3. P_x == (x+1)th point of the field, where x = 1,2,3,...
+4. Each Field Point is a JSON Object:
+```sh
+P_x:{
+  Latitude: latitude_value,
+  Longitude: longitude_value
+  }
+```
+
+
+### Response
+
+Upon successful submission:
+```sh
+
+{FieldID: uniqueIdentifier of the field}
+//save this in the database of your user, and use this to access the satellite data of this field
+
+```
+
+### Errors: 
+{errorDescription: errorD}
+errorDescriptions
+1: invalid points format
+2: Invalid field ID
+4: Invalid UID
 
 
 
@@ -441,6 +532,7 @@ Submit a request in the following JSON Format:
 17. hUnits == Number of hectare units utilized for this field
 
 
+### Crop Codes
 | Crop | CropCode |
 | ------ | ------ |
 | Rice (Kharif) | 1k |
@@ -544,6 +636,48 @@ Note:In the SensedDay key, provide the date from the "SARDays" object of the Fie
 }
 ```
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
+
+### To Resume Field Monitoring
+
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/resumeFieldMonitoring
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+}
+
+```
+### Response
+```sh
+Field Monitoring Resumed.
+```
+
+
+
+
+### To Pause Field Monitoring
+
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/pauseFieldMonitoring
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+}
+
+```
+### Response
+```sh
+Field Monitoring Paused.
+```
 
 
 ### To Retrieve a Field Report
