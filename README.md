@@ -22,8 +22,9 @@
 #### [How to Retrieve a Field Image](#how-to-retrieve-a-field-image-1)
 #### [How to Retrieve a Radar Vegetation Field Image](#how-to-retrieve-a-radar-vegetation-field-image-1)
 #### [To Retrieve a Field Report](#to-retrieve-a-field-report-1)
+#### [To Define Language of the HTML Field Report](#to-define-language-of-the-hTML-field-report-1)
 #### [To Retrieve a Field Area Index Image](#to-retrieve-a-field-area-index-image-1)
-#### [To Retrieve Present Weather Data](to-retrieve-present-weather-data-1)
+#### [To Retrieve Present Weather Data](#to-retrieve-present-weather-data-1)
 #### [Analysis Scales](#analysis-scales-1)
 
 ### Introduction:
@@ -679,6 +680,138 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/pauseFieldMonitoring
 Field Monitoring Paused.
 ```
 
+
+### To Define Language of the HTML Field Report
+
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/setReportLanguage
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+	"Language": "en"
+}
+
+```
+### Response
+```sh
+Language Set.
+```
+
+#### Language Codes:
+
+Afrikaans:   af
+Albanian:   sq
+Amharic:	am
+Arabic:	ar
+Armenian:	hy
+Azerbaijani:	az
+Basque:	eu
+Belarusian:	be
+Bengali:	bn
+Bosnian:	bs
+Bulgarian:	bg
+Catalan:	ca
+Cebuano:	ceb (ISO-639-2)
+Chinese (Simplified):	zh-CN or zh (BCP-47)
+Chinese (Traditional):	zh-TW (BCP-47)
+Corsican:	co
+Croatian:	hr
+Czech:	cs
+Danish:	da
+Dutch:	nl
+English:	en
+Esperanto:	eo
+Estonian:	et
+Finnish:	fi
+French:	fr
+Frisian:	fy
+Galician:	gl
+Georgian:	ka
+German:	de
+Greek:	el
+Gujarati:	gu
+Haitian Creole:	ht
+Hausa:	ha
+Hawaiian:	haw (ISO-639-2)
+Hebrew:	he or iw
+Hindi:	hi
+Hmong:	hmn (ISO-639-2)
+Hungarian:	hu
+Icelandic:	is
+Igbo:	ig
+Indonesian:	id
+Irish:	ga
+Italian:	it
+Japanese:	ja
+Javanese:	jv
+Kannada:	kn
+Kazakh:	kk
+Khmer:	km
+Kinyarwanda:	rw
+Korean:	ko
+Kurdish:	ku
+Kyrgyz:	ky
+Lao:	lo
+Latin:	la
+Latvian:	lv
+Lithuanian:	lt
+Luxembourgish:	lb
+Macedonian:	mk
+Malagasy:	mg
+Malay:	ms
+Malayalam:	ml
+Maltese:	mt
+Maori:	mi
+Marathi:	mr
+Mongolian:	mn
+Myanmar (Burmese):	my
+Nepali:	ne
+Norwegian:	no
+Nyanja (Chichewa):	ny
+Odia (Oriya):	or
+Pashto:	ps
+Persian:	fa
+Polish:	pl
+Portuguese (Portugal, Brazil):	pt
+Punjabi:	pa
+Romanian:	ro
+Russian:	ru
+Samoan:	sm
+Scots Gaelic:	gd
+Serbian:	sr
+Sesotho:	st
+Shona:	sn
+Sindhi:	sd
+Sinhala (Sinhalese):	si
+Slovak:	sk
+Slovenian:	sl
+Somali:	so
+Spanish:	es
+Sundanese:	su
+Swahili:	sw
+Swedish:	sv
+Tagalog (Filipino):	tl
+Tajik:	tg
+Tamil:	ta
+Tatar:	tt
+Telugu:	te
+Thai:	th
+Turkish:	tr
+Turkmen:	tk
+Ukrainian:	uk
+Urdu:	ur
+Uyghur:	ug
+Uzbek:	uz
+Vietnamese:	vi
+Welsh:	cy
+Xhosa:	xh
+Yiddish:	yi
+Yoruba:	yo
+Zulu:	zu
 
 ### To Retrieve a Field Report
 
