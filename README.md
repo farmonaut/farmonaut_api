@@ -702,7 +702,7 @@ Language Set.
 ```
 
 #### Language Codes:
-
+```sh
 Afrikaans:   af
 Albanian:   sq
 Amharic:	am
@@ -812,6 +812,8 @@ Xhosa:	xh
 Yiddish:	yi
 Yoruba:	yo
 Zulu:	zu
+
+```
 
 ### To Retrieve a Field Report
 
