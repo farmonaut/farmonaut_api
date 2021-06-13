@@ -25,9 +25,9 @@
 #### [To Define Language of the HTML Field Report](#to-define-language-of-the-hTML-field-report-1)
 #### [To Retrieve a Field Area Index Image](#to-retrieve-a-field-area-index-image-1)
 #### [To Retrieve Present Weather Data](#to-retrieve-present-weather-data-1)
-#### [To Retrieve Present Weather Data From Latitude and Longitude](#to-retrieve-present-weather-data-from-latitude-and-longitude-1)
+#### [To Retrieve Present Weather Data From Latitude and Longitude](#to-retrieve-present-weather-data-from-latitude-and-longitude)
 #### [To Retrieve Forecast Weather Data](#to-retrieve-forecast-weather-data-1)
-#### [To Retrieve Forecast Weather Data From Latitude and Longitude](#to-retrieve-forecast-weather-data-from-latitude-and-longitude-1)
+#### [To Retrieve Forecast Weather Data From Latitude and Longitude](#to-retrieve-forecast-weather-data-from-latitude-and-longitude)
 #### [To Retrieve Historical Weather For A Field](#to-retrieve-historical-weather-for-a-field-1)
 #### [Analysis Scales](#analysis-scales-1)
 
