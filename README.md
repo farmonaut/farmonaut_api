@@ -535,7 +535,7 @@ Submit a request in the following JSON Format:
 15. UID == unique identifier of your organization
 16. Weather == weather from the weather station nearest to the field.
 17. hUnits == Number of hectare units utilized for this field
-18. Yield == Total Yield in Tonnes For The Field
+18. Yield == Total Yield in Tonnes For The Field Area
 
 ### Crop Codes
 | Crop | CropCode |
