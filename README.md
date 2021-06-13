@@ -25,7 +25,9 @@
 #### [To Define Language of the HTML Field Report](#to-define-language-of-the-hTML-field-report-1)
 #### [To Retrieve a Field Area Index Image](#to-retrieve-a-field-area-index-image-1)
 #### [To Retrieve Present Weather Data](#to-retrieve-present-weather-data-1)
-#### [To Retrieve Weather Data From Latitude and Longitude](#to-retrieve-weather-data-from-latitude-and-longitude-1)
+#### [To Retrieve Present Weather Data From Latitude and Longitude](#to-retrieve-present-weather-data-from-latitude-and-longitude-1)
+#### [To Retrieve Forecast Weather Data](#to-retrieve-forecast-weather-data-1)
+#### [To Retrieve Forecast Weather Data From Latitude and Longitude](#to-retrieve-forecast-weather-data-from-latitude-and-longitude-1)
 #### [To Retrieve Historical Weather For A Field](#to-retrieve-historical-weather-for-a-field-1)
 #### [Analysis Scales](#analysis-scales-1)
 
@@ -880,6 +882,35 @@ Note: replace 'media1' with 'media' at the end of the provided URL in the respon
 
 
 
+
+### To Retrieve Forecast Weather Data
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getForecastWeather
+
+### Example Request Obj
+
+```sh
+{FieldID: fieldID,
+    UID: UID
+}
+```
+
+
+### To Retrieve Forecast Data From Latitude and Longitude
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getForecastWeatherFromLatLong
+
+### Example Request Obj
+
+```sh
+{    UID: UID,
+Latitude: lat,
+Longitude: lon
+}
+```
+
 ### To Retrieve Present Weather Data
 
   - Submit a POST REQUEST ON THE FOLLOWING LINK:
@@ -996,7 +1027,7 @@ cod Internal parameter
 ### To Retrieve Weather Data From Latitude and Longitude
 
   - Submit a POST REQUEST ON THE FOLLOWING LINK:
-https://us-central1-farmbase-b2f7e.cloudfunctions.net/getWeatherFromLatLong
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getPresentWeatherFromLatLong
 
 ### Example Request Obj
 
