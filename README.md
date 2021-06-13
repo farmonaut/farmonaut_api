@@ -23,6 +23,7 @@
 #### [How to Retrieve a Radar Vegetation Field Image](#how-to-retrieve-a-radar-vegetation-field-image-1)
 #### [To Retrieve a Field Report](#to-retrieve-a-field-report-1)
 #### [To Define Language of the HTML Field Report](#to-define-language-of-the-hTML-field-report-1)
+#### [To Retrieve Yield Estimates Of A Field](#to-retrieve-yield-estimates-of-a-field-1)
 #### [To Retrieve a Field Area Index Image](#to-retrieve-a-field-area-index-image-1)
 #### [To Retrieve Present Weather Data](#to-retrieve-present-weather-data-1)
 #### [To Retrieve Present Weather Data From Latitude and Longitude](#to-retrieve-present-weather-data-from-latitude-and-longitude)
@@ -853,6 +854,22 @@ Report Formats: "PDF", "HTML"
 ```
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
+
+### To Retrieve Yield Estimates Of A Field
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getYieldEstimates
+
+### Example Request Obj
+
+```sh
+{    UID: UID,
+FieldID:fieldID,
+}
+```
+
+### Response
+Yield == Total Yield Estimated in Tonnes For Given The Field Area
 
 ### To Retrieve a Field Area Index Image
 
