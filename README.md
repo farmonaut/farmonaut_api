@@ -60,7 +60,7 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 
 [![N|Solid](https://farmonaut.com/Images/images.JPG)](https://farmonaut.com/)
 
-[![N|Solid](https://secureservercdn.net/160.153.137.14/ox4.27a.myftpupload.com/wp-content/uploads/2020/11/farmonaut_api.jpg)](https://farmonaut.com/)
+[![N|Solid](https://farmonaut.com/wp-content/uploads/2021/06/farmonaut-api-1.jpg)](https://farmonaut.com/)
 
 ### Get Your Unique ID and Start Using Farmonaut API
 
