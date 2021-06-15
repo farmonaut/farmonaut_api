@@ -43,6 +43,7 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 | NDVI: Normalized Difference Vegetation Index | 10 meters/pixel |
 | NDWI: Normalized Difference Water Index | 20 meters/pixel |
 | EVAPO: Evapotranspiration | 20 meters/pixel |
+| NDMI: Normalized Difference Moisture Index | 20 meters/pixel |
 | EVI: Enhanced Vegetation Index | 10 meters/pixel |
 | RVI: Radar Vegetation Index | 10 meters/pixel |
 | NDRE: Normalized Difference Red Edge | 20 meters/pixel |
@@ -55,6 +56,7 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 | TCI: True color image | 10 meters/pixel |
 | ETCI: Enhanced true color image | 10 meters/pixel |
 | HYBRID: Hybrid Image | 20 meters/pixel |
+| DEM: Digital Elevation Model Image | 10 meters/pixel |
 
 [![N|Solid](https://farmonaut.com/Images/images.JPG)](https://farmonaut.com/)
 
