@@ -64,10 +64,10 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 
 ### Get Your Unique ID and Start Using Farmonaut API
 
-- #### 1000 Hectare Units: (https://rzp.io/l/farmonaut1000)
-- #### 5000 Hectare Units: (https://rzp.io/l/farmonaut5000)
-- #### 10000 Hectare Units: (https://rzp.io/l/farmonaut10000)
-- #### 25000 Hectare Units: (https://rzp.io/l/farmonaut25000)
+- #### 2000 Hectare Units: (https://rzp.io/l/farmonaut1000)
+- #### 7500 Hectare Units: (https://rzp.io/l/farmonaut5000)
+- #### 15000 Hectare Units: (https://rzp.io/l/farmonaut10000)
+- #### 30000 Hectare Units: (https://rzp.io/l/farmonaut25000)
 
 Once a payment is made, you will receive a unique user id (UID) on your provided email address within 48 hours. With this unique user id (UID), you can start using Farmonaut's API.
 
