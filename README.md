@@ -13,6 +13,7 @@
 #### [What is a Hectare Unit?](#what-is-a-hectare-unit-1)
 #### [How to submit a New Farmer Field](#how-to-submit-a-new-farmer-field-1)
 #### [How to modify Field Coordinates of Already Submitted Field](#how-to-modify-field-coordinates-of-already-submitted-field-1)
+#### [How to get Field Area By Boundary Points](#how-to-modify-field-area-by-boundary-points)
 #### [To Pause Field Monitoring](#to-pause-field-monitoring-1)
 #### [To Resume Field Monitoring](#to-resume-field-monitoring-1)
 #### [How to Retreive All Farmers Data](#how-to-retreive-all-farmers-data-1)
@@ -233,6 +234,67 @@ errorDescriptions
 2: Invalid field ID
 4: Invalid UID
 
+
+
+### How to get field area by boundary points
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldAreaByBoundaryPoints
+
+
+Submit a request in the JSON Format
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"Points": {
+		"a": {
+			"Latitude": 12.975601039033629,
+			"Longitude": 77.76385936886072
+		},
+		"P_1": {
+			"Latitude": 12.980210619777425,
+			"Longitude": 77.76523131877184
+		},
+		"P_2": {
+			"Latitude": 12.9802524385325,
+			"Longitude": 77.76818878948689
+		},
+		"P_3": {
+			"Latitude": 12.976061053481807,
+			"Longitude": 77.768659517169
+		},
+		"P_4": {
+			"Latitude": 12.975984275561343,
+			"Longitude": 77.76420503854752
+		}
+	}
+}
+```
+
+### Defintions
+1. Points == All the boundary points of the field in a clock-wise/counter-clock wise order
+2. a == First Point of the field
+3. P_x == (x+1)th point of the field, where x = 1,2,3,...
+4. Each Field Point is a JSON Object:
+```sh
+P_x:{
+  Latitude: latitude_value,
+  Longitude: longitude_value
+  }
+```
+
+
+### Response
+
+Upon successful submission:
+```sh
+
+{FieldArea: fieldArea}
+//field area is in sq. m.
+
+```
 
 
 ### How to Retreive All Farmers Data
