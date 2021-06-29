@@ -13,7 +13,7 @@
 #### [What is a Hectare Unit?](#what-is-a-hectare-unit-1)
 #### [How to submit a New Farmer Field](#how-to-submit-a-new-farmer-field-1)
 #### [How to modify Field Coordinates of Already Submitted Field](#how-to-modify-field-coordinates-of-already-submitted-field-1)
-#### [How to get Field Area By Boundary Points](#how-to-modify-field-area-by-boundary-points-1)
+#### [How to get Field Area By Boundary Points](#how-to-get-field-area-by-boundary-points-1)
 #### [To Pause Field Monitoring](#to-pause-field-monitoring-1)
 #### [To Resume Field Monitoring](#to-resume-field-monitoring-1)
 #### [How to Retreive All Farmers Data](#how-to-retreive-all-farmers-data-1)
