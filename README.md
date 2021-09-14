@@ -72,7 +72,7 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 
 Once a payment is made, you will receive a unique user id (UID) on your provided email address within 48 hours. With this unique user id (UID), you can start using Farmonaut's API.
 
-##### 1 hectare unit will be utilized for each weather request.
+##### 1 hectare unit will be utilized per 10 weather request.
 ##### DO NOT SHARE THIS UID WITH ANYONE. KEEP IT SECURE AND CONFIDENTIAL.
 
 
