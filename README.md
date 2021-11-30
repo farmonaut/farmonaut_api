@@ -60,6 +60,7 @@ Farmonaut’s Satellite Based Crop Health Monitoring System is built to put sate
 | TCI: True color image | 10 meters/pixel |
 | ETCI: Enhanced true color image | 10 meters/pixel |
 | HYBRID: Hybrid Image | 20 meters/pixel |
+| COLORBLIND: Colorblind Image | 20 meters/pixel |
 | DEM: Digital Elevation Model Image | 10 meters/pixel |
 
 [![N|Solid](https://farmonaut.com/Images/images.JPG)](https://farmonaut.com/)
@@ -648,6 +649,7 @@ Submit a request in the following JSON Format:
 | NDVI | ndvi |
 | NDWI | ndwi |
 | EVAPO | evapo |
+| NDMI | ndmi |
 | EVI | evi |
 | RVI | rvi |
 | NDRE | ndre |
@@ -660,6 +662,8 @@ Submit a request in the following JSON Format:
 | TCI | tci |
 | ETCI | etci |
 | HYBRID | hybrid |
+| COLORBLIND | hybrid_blind |
+| DEM | dem |
 
 ### How to Retrieve a Field Image
 
