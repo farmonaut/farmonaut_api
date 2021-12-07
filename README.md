@@ -23,7 +23,9 @@
 #### [How to Retreive My Usage Data](#how-to-retreive-my-usage-data-1)
 #### [How to Retreive A Single Farmer's Data](#how-to-retreive-a-single-farmers-data-1)
 #### [Crop Codes](#crop-codes-1)
+#### [How to Retrieve a Past Weather Graph](#how-to-retrieve-a-past_weather-graph-1)
 #### [How to Retrieve a Field Image](#how-to-retrieve-a-field-image-1)
+#### [How to Retrieve a Field Image Linegraph](#how-to-retrieve-a-field-image-linegraph-1)
 #### [How to Retrieve a Radar Vegetation Field Image](#how-to-retrieve-a-radar-vegetation-field-image-1)
 #### [To Retrieve a Field Report](#to-retrieve-a-field-report-1)
 #### [To Define Language of the HTML Field Report](#to-define-language-of-the-hTML-field-report-1)
@@ -691,6 +693,34 @@ https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImage
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
 
 
+
+
+
+### How to Retrieve a Field Image Linegraph
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getFieldImageLinegraph
+
+
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+	"SensedDay": "20201025",
+	"ImageType": "ndvi"
+}
+```
+### Response
+```sh
+{
+"url":url
+}
+```
+Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
+
 ### How to Retrieve a Radar Vegetation Field Image
 
   - Submit a POST REQUEST ON THE FOLLOWING LINK:
@@ -718,6 +748,33 @@ Note:In the SensedDay key, provide the date from the "SARDays" object of the Fie
 }
 ```
 Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
+
+
+### How to Retrieve a Past Weather Graph
+
+  - Submit a POST REQUEST ON THE FOLLOWING LINK:
+https://us-central1-farmbase-b2f7e.cloudfunctions.net/getPastWeatherGraph
+
+
+
+### Example Request Obj
+```sh
+{
+	"UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+	"FieldID": "1600503072436",
+	"SensedDay": "20201025",
+}
+```
+### Response
+```sh
+{
+"url":url
+}
+```
+Note: replace 'media1' with 'media' at the end of the provided URL in the response.
+
+
 
 
 ### To Resume Field Monitoring
