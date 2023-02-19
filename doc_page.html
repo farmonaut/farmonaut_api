@@ -620,6 +620,8 @@ return response;
           return "Double / Float";
         case "Map (key-value pairs)":
           return "Map / Disctionary (key-value pairs)";
+        case "Array":
+          return "Array / List";
       }
       return "";
     }
@@ -928,12 +930,194 @@ return response;
             "isOptional": false
           }
         ],
-        "response": [ //TODO
+        "response": [
+          {
+            "name": "UID",
+            "dataType": "String",
+            "dummyValue": "BpkwnSJdwHTjKhdm8ZWKJBO6HUn5",
+            "desc": "Also referred as API ID at some places. It's basically an identifier for your account.",
+          },
+          {
+            "name": "FieldID",
+            "dataType": "String",
+            "dummyValue": "1668483626232",
+            "desc": "It is an identifier for the the field. It's unique for every field.",
+          },
           {
             "name": "PolygonID",
             "dataType": "String",
             "dummyValue": "1668483636222",
             "desc": "The unique ID of the polygon. Polygon is a smaller section inside a field.",
+          },
+          {
+            "name": "Name",
+            "dataType": "String",
+            "dummyValue": "Rajesh",
+            "desc": "The name of the farmer.",
+          },
+          {
+            "name": "PhoneNumber",
+            "dataType": "String",
+            "dummyValue": "+911100110011",
+            "desc": "The phone number of the farmer.",
+          },
+          {
+            "name": "City",
+            "dataType": "String",
+            "dummyValue": "Mahadevpur",
+            "desc": "The nearest city to the field.",
+          },
+          {
+            "name": "FullAddress",
+            "dataType": "String",
+            "dummyValue": "mahadevpur, jayashankar, telangana",
+            "desc": "The address of the field.",
+          },
+          {
+            "name": "TimeStamp",
+            "dataType": "String",
+            "dummyValue": "1676826618990",
+            "desc": "internal data",
+          },
+          {
+            "name": "Area",
+            "dataType": "int",
+            "dummyValue": "465",
+            "desc": "The area of the polygon.",
+          },
+          {
+            "name": "FarmerInfoData-",
+            "dataType": "Map (key-value pairs)",
+            "dummyValue": {
+              "FarmerCode": "abc123456",
+              "PhoneNumber": "+911100110011",
+              "amro": "peddapalli",
+              "crop": "chilli",
+              "declaredArea": 2,
+              "district": "jayashankar",
+              "state": "telangana",
+              "store": "a1234 - mahadevpur",
+              "taluka": "",
+              "variety": "default chilli",
+              "village": "mahadevpur",
+              "zone": "warangal"
+            },
+            "valueParams": [
+              {
+                "name": "FarmerCode",
+                "dataType": "String",
+                "dummyValue": "abs123456",
+                "desc": "Org farmer code.",
+                "isOptional": true
+              },
+              {
+                "name": "PhoneNumber",
+                "dataType": "String",
+                "dummyValue": "+911100110011",
+                "desc": "The phone no of the farmer",
+                "isOptional": true
+              },
+              {
+                "name": "amro",
+                "dataType": "String",
+                "dummyValue": "chilli",
+                "desc": "internal data",
+                "isOptional": true
+              },
+              {
+                "name": "crop",
+                "dataType": "String",
+                "dummyValue": "chilli",
+                "desc": "The crop name of the polygon",
+                "isOptional": true
+              },
+              {
+                "name": "declaredArea",
+                "dataType": "int",
+                "dummyValue": 2,
+                "desc": "internal data",
+                "isOptional": true
+              },
+              {
+                "name": "district",
+                "dataType": "String",
+                "dummyValue": "jayashankar",
+                "desc": "The district of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "state",
+                "dataType": "String",
+                "dummyValue": "telangana",
+                "desc": "The state of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "store",
+                "dataType": "String",
+                "dummyValue": "a1234 - mahadevpur",
+                "desc": "internal data",
+                "isOptional": true
+              },
+              {
+                "name": "taluka",
+                "dataType": "String",
+                "dummyValue": "shivnagar",
+                "desc": "The taluka of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "variety",
+                "dataType": "String",
+                "dummyValue": "default chilli",
+                "desc": "The crop variety name, sown in the polygon area.",
+                "isOptional": true
+              },
+              {
+                "name": "village",
+                "dataType": "String",
+                "dummyValue": "mahadevpur",
+                "desc": "The village name of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "zone",
+                "dataType": "String",
+                "dummyValue": "warangal",
+                "desc": "The zone of the polygon.",
+                "isOptional": true
+              },
+            ],
+            "desc": "It's a Map containing various farmer related data.",
+            "isOptional": true
+          },
+          {
+            "name": "Coordinates",
+            "dataType": "Map (key-value pairs)",
+            "dummyValue": {
+              "P_0": {
+                "Latitude": 12.975601039033629,
+                "Longitude": 77.76385936886072
+              },
+              "P_1": {
+                "Latitude": 12.980210619777425,
+                "Longitude": 77.76523131877184
+              },
+              "P_2": {
+                "Latitude": 12.9802524385325,
+                "Longitude": 77.76818878948689
+              },
+              "P_3": {
+                "Latitude": 12.976061053481807,
+                "Longitude": 77.768659517169
+              },
+              "P_4": {
+                "Latitude": 12.975984275561343,
+                "Longitude": 77.76420503854752
+              },
+            },
+            "desc": "All the boundary points of the polygon in a clock-wise/counter-clock-wise order. First point is referred as 'P_0', then next as 'P_1', 'P_2' and so on.\nSo if you have 4 points, use keys as 'P_0', 'P_1', 'P_2' and 'P_3'.",
+            "isOptional": false
           }
         ],
         "sampleCodes": {},
@@ -991,12 +1175,194 @@ return response;
             "isOptional": false,
           }
         ],
-        "response": [ //TODO
+        "response": [
+          {
+            "name": "UID",
+            "dataType": "String",
+            "dummyValue": "BpkwnSJdwHTjKhdm8ZWKJBO6HUn5",
+            "desc": "Also referred as API ID at some places. It's basically an identifier for your account.",
+          },
+          {
+            "name": "FieldID",
+            "dataType": "String",
+            "dummyValue": "1668483626232",
+            "desc": "It is an identifier for the the field. It's unique for every field.",
+          },
           {
             "name": "PolygonID",
             "dataType": "String",
             "dummyValue": "1668483636222",
             "desc": "The unique ID of the polygon. Polygon is a smaller section inside a field.",
+          },
+          {
+            "name": "Name",
+            "dataType": "String",
+            "dummyValue": "Rajesh",
+            "desc": "The name of the farmer.",
+          },
+          {
+            "name": "PhoneNumber",
+            "dataType": "String",
+            "dummyValue": "+911100110011",
+            "desc": "The phone number of the farmer.",
+          },
+          {
+            "name": "City",
+            "dataType": "String",
+            "dummyValue": "Mahadevpur",
+            "desc": "The nearest city to the field.",
+          },
+          {
+            "name": "FullAddress",
+            "dataType": "String",
+            "dummyValue": "mahadevpur, jayashankar, telangana",
+            "desc": "The address of the field.",
+          },
+          {
+            "name": "TimeStamp",
+            "dataType": "String",
+            "dummyValue": "1676826618990",
+            "desc": "internal data",
+          },
+          {
+            "name": "Area",
+            "dataType": "int",
+            "dummyValue": "465",
+            "desc": "The area of the polygon.",
+          },
+          {
+            "name": "FarmerInfoData-",
+            "dataType": "Map (key-value pairs)",
+            "dummyValue": {
+              "FarmerCode": "abc123456",
+              "PhoneNumber": "+911100110011",
+              "amro": "peddapalli",
+              "crop": "chilli",
+              "declaredArea": 2,
+              "district": "jayashankar",
+              "state": "telangana",
+              "store": "a1234 - mahadevpur",
+              "taluka": "",
+              "variety": "default chilli",
+              "village": "mahadevpur",
+              "zone": "warangal"
+            },
+            "valueParams": [
+              {
+                "name": "FarmerCode",
+                "dataType": "String",
+                "dummyValue": "abs123456",
+                "desc": "Org farmer code.",
+                "isOptional": true
+              },
+              {
+                "name": "PhoneNumber",
+                "dataType": "String",
+                "dummyValue": "+911100110011",
+                "desc": "The phone no of the farmer",
+                "isOptional": true
+              },
+              {
+                "name": "amro",
+                "dataType": "String",
+                "dummyValue": "chilli",
+                "desc": "internal data",
+                "isOptional": true
+              },
+              {
+                "name": "crop",
+                "dataType": "String",
+                "dummyValue": "chilli",
+                "desc": "The crop name of the polygon",
+                "isOptional": true
+              },
+              {
+                "name": "declaredArea",
+                "dataType": "int",
+                "dummyValue": 2,
+                "desc": "internal data",
+                "isOptional": true
+              },
+              {
+                "name": "district",
+                "dataType": "String",
+                "dummyValue": "jayashankar",
+                "desc": "The district of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "state",
+                "dataType": "String",
+                "dummyValue": "telangana",
+                "desc": "The state of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "store",
+                "dataType": "String",
+                "dummyValue": "a1234 - mahadevpur",
+                "desc": "internal data",
+                "isOptional": true
+              },
+              {
+                "name": "taluka",
+                "dataType": "String",
+                "dummyValue": "shivnagar",
+                "desc": "The taluka of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "variety",
+                "dataType": "String",
+                "dummyValue": "default chilli",
+                "desc": "The crop variety name, sown in the polygon area.",
+                "isOptional": true
+              },
+              {
+                "name": "village",
+                "dataType": "String",
+                "dummyValue": "mahadevpur",
+                "desc": "The village name of the polygon.",
+                "isOptional": true
+              },
+              {
+                "name": "zone",
+                "dataType": "String",
+                "dummyValue": "warangal",
+                "desc": "The zone of the polygon.",
+                "isOptional": true
+              },
+            ],
+            "desc": "It's a Map containing various farmer related data.",
+            "isOptional": true
+          },
+          {
+            "name": "Coordinates",
+            "dataType": "Map (key-value pairs)",
+            "dummyValue": {
+              "P_0": {
+                "Latitude": 12.975601039033629,
+                "Longitude": 77.76385936886072
+              },
+              "P_1": {
+                "Latitude": 12.980210619777425,
+                "Longitude": 77.76523131877184
+              },
+              "P_2": {
+                "Latitude": 12.9802524385325,
+                "Longitude": 77.76818878948689
+              },
+              "P_3": {
+                "Latitude": 12.976061053481807,
+                "Longitude": 77.768659517169
+              },
+              "P_4": {
+                "Latitude": 12.975984275561343,
+                "Longitude": 77.76420503854752
+              },
+            },
+            "desc": "All the boundary points of the polygon in a clock-wise/counter-clock-wise order. First point is referred as 'P_0', then next as 'P_1', 'P_2' and so on.\nSo if you have 4 points, use keys as 'P_0', 'P_1', 'P_2' and 'P_3'.",
+            "isOptional": false
           }
         ],
         "sampleCodes": {},
@@ -1028,7 +1394,7 @@ return response;
       },
       {
         "name": "Delete Farm Polygons",
-        "desc": "(Only for COROMANDEL) It deletes the farm polygons and all their's data",
+        "desc": "(Only for COROMANDEL) It deletes the farm polygons and all their's data.",
         "endpoint": "/deleteFarmPolygons",
         "isDeprecated": false,
         "body": [
@@ -1040,16 +1406,23 @@ return response;
             "isOptional": false
           },
           {
+            "name": "FieldID",
+            "dataType": "String",
+            "dummyValue": "1668483626232",
+            "desc": "It is an identifier for the the field. It's unique for every field.",
+            "isOptional": false,
+          },
+          {
             "name": "PolygonIDs",
             "dataType": "Array",
-            "dummyValue": ["1668483636222", "1668483636223", "1668483636224"],
-            "desc": "The array/list of polygon IDs to be deleted.",
+            "dummyValue": [1668483636222, 1668483636223, 1668483636224],
+            "desc": "The array/list of polygon IDs as integers to be deleted.",
             "isOptional": false,
           }
         ],
-        "response": { //TODO
+        "response": {
           "dataType": "String",
-          "successValue": "The polygons are deleted successfully"
+          "successValue": "Polygons Deleted Successfully!"
         },
         "sampleCodes": {},
         "errors": {
@@ -1130,8 +1503,53 @@ return response;
           }
         ],
         "response": [
+
           {
-            "name": "url",
+            "name": "UID",
+            "dataType": "String",
+            "dummyValue": "BpkwnSJdwHTjKhdm8ZWKJBO6HUn5",
+            "desc": "Also referred as API ID at some places. It's basically an identifier for your account.",
+            "isOptional": false
+          },
+          {
+            "name": "FieldID",
+            "dataType": "String",
+            "dummyValue": "1668483626232",
+            "desc": "It is an identifier for the the field. It's unique for every field.",
+            "isOptional": false,
+          },
+          {
+            "name": "PolygonID",
+            "dataType": "String",
+            "dummyValue": "1668483636222",
+            "desc": "The unique ID of the polygon. Polygon is a smaller section inside a field.",
+            "isOptional": false,
+          },
+          {
+            "name": "ImageType",
+            "dataType": "String",
+            "dummyValue": "ndvi",
+            "desc": "The image type code of the image. The supported values can be found here.",
+            "isOptional": false,
+            "references": ["imageTypeList"]
+          },
+          {
+            "name": "RequestedDay",
+            "dataType": "String",
+            "dummyValue": "20201025",
+            "desc": "The date of satellite visit for which image is needed. The valid dates can be found in the 'SensedDays' parameter of the polygon data.",
+            "isOptional": false
+          },
+          {
+            "name": "Colormap",
+            "dataType": "String",
+            "dummyValue": "1",
+            "desc": "The color-map for the image. Two values are supported- '1' used for good height vegetation, '2' used for small height vegetation. Colormap 2 is not available for TCI, ETCI, Hybrid, ColorBlind and Evapotranspiration images. See more about color-maps here.",
+            "isOptional": false,
+            "references": ["colorMaps"]
+          }
+          , {
+            "name": "URL",
             "dataType": "String",
             "dummyValue": "https://lh3.googleusercontent.com/a/AATXAJxBJj0R9t3rka5q6kU40XhuXtg5ObhC8sbXPQ0f=s96-c",
             "desc": "The URL of the requested image."
@@ -5059,11 +5477,38 @@ return response;
                 argName = argName.substring(0, argName.length - 1);
               }
             }
-            if (args["dataType"] == "Map (key-value pairs)") {
-              result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : {${endTxt}<br>${"valueParams" in args ? getBodyCodeStr(args.valueParams, indentStr + " ", isForOkHttp) : getDummyValueCodeStr(args["dummyValue"], indentStr + "  ", isForOkHttp)}${indentStr}},${endTxt}<br>`;
-            } else {
-              result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : ${backslashTxt}"${args["dummyValue"]}${backslashTxt}",${endTxt}<br>`;
+            const dummyValue = args["dummyValue"];
+            switch (args["dataType"]) {
+              case "Map (key-value pairs)":
+                result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : {${endTxt}<br>${"valueParams" in args ? getBodyCodeStr(args.valueParams, indentStr + " ", isForOkHttp) : getDummyValueCodeStr(dummyValue, indentStr + "  ", isForOkHttp)}${indentStr}},${endTxt}<br>`;
+                break;
+              case "int":
+              case "double":
+                result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : ${dummyValue},${endTxt}<br>`;
+                break;
+              case "Array":
+                if (typeof (dummyValue[0]) == "string") {
+                  result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : [`;
+                  for (let itemKey in dummyValue) {
+                    result += `${backslashTxt}"${dummyValue[itemKey]}${backslashTxt}",`;
+                  }
+                  result += `],${endTxt}<br>`;
+
+                } else {
+                  result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : [${dummyValue}],${endTxt}<br>`;
+                } break;
+              case "String":
+              default:
+                result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : ${backslashTxt}"${dummyValue}${backslashTxt}",${endTxt}<br>`;
+                break;
             }
+            // if (args["dataType"] == "Map (key-value pairs)") {
+            //   result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : {${endTxt}<br>${"valueParams" in args ? getBodyCodeStr(args.valueParams, indentStr + " ", isForOkHttp) : getDummyValueCodeStr(dummyValue, indentStr + "  ", isForOkHttp)}${indentStr}},${endTxt}<br>`;
+            // } else if (args["dataType"] == "Array") {
+            //   result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : {${endTxt}<br>${"valueParams" in args ? getBodyCodeStr(args.valueParams, indentStr + " ", isForOkHttp) : getDummyValueCodeStr(dummyValue, indentStr + "  ", isForOkHttp)}${indentStr}},${endTxt}<br>`;
+            // } {
+            //   result += `${indentStr}${backslashTxt}"${argName}${backslashTxt}" : ${backslashTxt}"${dummyValue}${backslashTxt}",${endTxt}<br>`;
+            // }
           }
           return result
         }
