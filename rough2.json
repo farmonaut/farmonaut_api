@@ -1,0 +1,1096 @@
+{
+  "latitude": 12.975601039033629,
+  "longitude": 77.76385936886072,
+  "timezone": "Asia/Kolkata",
+  "daily": {
+    "summary": "Rain on Monday through next Wednesday.",
+    "icon": "rain",
+    "data": [
+      {
+        "time": 1668537000,
+        "summary": "Partly cloudy throughout the day.",
+        "icon": "partly-cloudy-day",
+        "sunriseTime": 1668559740,
+        "sunsetTime": 1668601260,
+        "moonPhase": 0.75,
+        "precipIntensity": 0.0005,
+        "precipIntensityMax": 0.0033,
+        "precipIntensityMaxTime": 1668537000,
+        "precipProbability": 0.19,
+        "precipType": "rain",
+        "temperatureHigh": 78.96,
+        "temperatureHighTime": 1668585780,
+        "temperatureLow": 55.01,
+        "temperatureLowTime": 1668639960,
+        "apparentTemperatureHigh": 78.83,
+        "apparentTemperatureHighTime": 1668583860,
+        "apparentTemperatureLow": 55.5,
+        "apparentTemperatureLowTime": 1668639960,
+        "dewPoint": 61.96,
+        "humidity": 0.76,
+        "pressure": 1013.6,
+        "windSpeed": 6.13,
+        "windGust": 16.34,
+        "windGustTime": 1668605820,
+        "windBearing": 50,
+        "cloudCover": 0.6,
+        "uvIndex": 7,
+        "uvIndexTime": 1668579240,
+        "visibility": 10,
+        "ozone": 266,
+        "temperatureMin": 60.8,
+        "temperatureMinTime": 1668552480,
+        "temperatureMax": 78.96,
+        "temperatureMaxTime": 1668585780,
+        "apparentTemperatureMin": 62.14,
+        "apparentTemperatureMinTime": 1668552540,
+        "apparentTemperatureMax": 78.83,
+        "apparentTemperatureMaxTime": 1668583860
+      },
+      {
+        "time": 1668623400,
+        "summary": "Partly cloudy throughout the day.",
+        "icon": "partly-cloudy-day",
+        "sunriseTime": 1668646200,
+        "sunsetTime": 1668687660,
+        "moonPhase": 0.78,
+        "precipIntensity": 0,
+        "precipIntensityMax": 0,
+        "precipProbability": 0,
+        "temperatureHigh": 77.7,
+        "temperatureHighTime": 1668673260,
+        "temperatureLow": 51.35,
+        "temperatureLowTime": 1668729840,
+        "apparentTemperatureHigh": 77.2,
+        "apparentTemperatureHighTime": 1668673260,
+        "apparentTemperatureLow": 51.84,
+        "apparentTemperatureLowTime": 1668729840,
+        "dewPoint": 55.04,
+        "humidity": 0.67,
+        "pressure": 1013.6,
+        "windSpeed": 6.17,
+        "windGust": 12.47,
+        "windGustTime": 1668656760,
+        "windBearing": 28,
+        "cloudCover": 0.53,
+        "uvIndex": 7,
+        "uvIndexTime": 1668667800,
+        "visibility": 10,
+        "ozone": 266.5,
+        "temperatureMin": 55.01,
+        "temperatureMinTime": 1668639960,
+        "temperatureMax": 77.7,
+        "temperatureMaxTime": 1668673260,
+        "apparentTemperatureMin": 55.5,
+        "apparentTemperatureMinTime": 1668639960,
+        "apparentTemperatureMax": 77.2,
+        "apparentTemperatureMaxTime": 1668673260
+      },
+      {
+        "time": 1668709800,
+        "summary": "Mostly cloudy throughout the day.",
+        "icon": "partly-cloudy-day",
+        "sunriseTime": 1668732600,
+        "sunsetTime": 1668774060,
+        "moonPhase": 0.81,
+        "precipIntensity": 0,
+        "precipIntensityMax": 0,
+        "precipProbability": 0,
+        "temperatureHigh": 76.94,
+        "temperatureHighTime": 1668760320,
+        "temperatureLow": 51.7,
+        "temperatureLowTime": 1668816420,
+        "apparentTemperatureHigh": 76.44,
+        "apparentTemperatureHighTime": 1668760320,
+        "apparentTemperatureLow": 52.19,
+        "apparentTemperatureLowTime": 1668816420,
+        "dewPoint": 51.53,
+        "humidity": 0.63,
+        "pressure": 1013.8,
+        "windSpeed": 6.47,
+        "windGust": 13.57,
+        "windGustTime": 1668776460,
+        "windBearing": 33,
+        "cloudCover": 0.79,
+        "uvIndex": 7,
+        "uvIndexTime": 1668752760,
+        "visibility": 10,
+        "ozone": 265.3,
+        "temperatureMin": 51.35,
+        "temperatureMinTime": 1668729840,
+        "temperatureMax": 76.94,
+        "temperatureMaxTime": 1668760320,
+        "apparentTemperatureMin": 51.84,
+        "apparentTemperatureMinTime": 1668729840,
+        "apparentTemperatureMax": 76.44,
+        "apparentTemperatureMaxTime": 1668760320
+      },
+      {
+        "time": 1668796200,
+        "summary": "Mostly cloudy throughout the day.",
+        "icon": "partly-cloudy-day",
+        "sunriseTime": 1668819060,
+        "sunsetTime": 1668860460,
+        "moonPhase": 0.85,
+        "precipIntensity": 0,
+        "precipIntensityMax": 0,
+        "precipProbability": 0,
+        "temperatureHigh": 74.5,
+        "temperatureHighTime": 1668847200,
+        "temperatureLow": 52.97,
+        "temperatureLowTime": 1668899460,
+        "apparentTemperatureHigh": 74,
+        "apparentTemperatureHighTime": 1668847200,
+        "apparentTemperatureLow": 53.46,
+        "apparentTemperatureLowTime": 1668899460,
+        "dewPoint": 52.91,
+        "humidity": 0.68,
+        "pressure": 1013.6,
+        "windSpeed": 6.9,
+        "windGust": 14.81,
+        "windGustTime": 1668830400,
+        "windBearing": 25,
+        "cloudCover": 0.91,
+        "uvIndex": 7,
+        "uvIndexTime": 1668837360,
+        "visibility": 10,
+        "ozone": 260.6,
+        "temperatureMin": 51.7,
+        "temperatureMinTime": 1668816420,
+        "temperatureMax": 74.5,
+        "temperatureMaxTime": 1668847200,
+        "apparentTemperatureMin": 52.19,
+        "apparentTemperatureMinTime": 1668816420,
+        "apparentTemperatureMax": 74,
+        "apparentTemperatureMaxTime": 1668847200
+      },
+      {
+        "time": 1668882600,
+        "summary": "Mostly cloudy throughout the day.",
+        "icon": "partly-cloudy-day",
+        "sunriseTime": 1668905460,
+        "sunsetTime": 1668946860,
+        "moonPhase": 0.88,
+        "precipIntensity": 0.0038,
+        "precipIntensityMax": 0.0648,
+        "precipIntensityMaxTime": 1668967440,
+        "precipProbability": 0.21,
+        "precipType": "rain",
+        "temperatureHigh": 75.96,
+        "temperatureHighTime": 1668931260,
+        "temperatureLow": 59.71,
+        "temperatureLowTime": 1668985200,
+        "apparentTemperatureHigh": 75.46,
+        "apparentTemperatureHighTime": 1668931260,
+        "apparentTemperatureLow": 60.2,
+        "apparentTemperatureLowTime": 1668985200,
+        "dewPoint": 53.24,
+        "humidity": 0.65,
+        "pressure": 1011.5,
+        "windSpeed": 6.81,
+        "windGust": 12.26,
+        "windGustTime": 1668953580,
+        "windBearing": 359,
+        "cloudCover": 0.82,
+        "uvIndex": 7,
+        "uvIndexTime": 1668926640,
+        "visibility": 10,
+        "ozone": 259.7,
+        "temperatureMin": 52.97,
+        "temperatureMinTime": 1668899460,
+        "temperatureMax": 75.96,
+        "temperatureMaxTime": 1668931260,
+        "apparentTemperatureMin": 53.46,
+        "apparentTemperatureMinTime": 1668899460,
+        "apparentTemperatureMax": 75.46,
+        "apparentTemperatureMaxTime": 1668931260
+      },
+      {
+        "time": 1668969000,
+        "summary": "Possible light rain in the evening.",
+        "icon": "rain",
+        "sunriseTime": 1668991920,
+        "sunsetTime": 1669033260,
+        "moonPhase": 0.92,
+        "precipIntensity": 0.0048,
+        "precipIntensityMax": 0.0562,
+        "precipIntensityMaxTime": 1668969000,
+        "precipProbability": 0.68,
+        "precipType": "rain",
+        "temperatureHigh": 69.75,
+        "temperatureHighTime": 1669020480,
+        "temperatureLow": 63.83,
+        "temperatureLowTime": 1669043220,
+        "apparentTemperatureHigh": 69.53,
+        "apparentTemperatureHighTime": 1669020660,
+        "apparentTemperatureLow": 64.79,
+        "apparentTemperatureLowTime": 1669044540,
+        "dewPoint": 58.31,
+        "humidity": 0.78,
+        "pressure": 1010.5,
+        "windSpeed": 9.16,
+        "windGust": 20.54,
+        "windGustTime": 1669038060,
+        "windBearing": 346,
+        "cloudCover": 1,
+        "uvIndex": 5,
+        "uvIndexTime": 1669012560,
+        "visibility": 9.946,
+        "ozone": 260.1,
+        "temperatureMin": 59.71,
+        "temperatureMinTime": 1668985200,
+        "temperatureMax": 69.75,
+        "temperatureMaxTime": 1669020480,
+        "apparentTemperatureMin": 60.2,
+        "apparentTemperatureMinTime": 1668985200,
+        "apparentTemperatureMax": 69.53,
+        "apparentTemperatureMaxTime": 1669020660
+      },
+      {
+        "time": 1669055400,
+        "summary": "Rain throughout the day.",
+        "icon": "rain",
+        "sunriseTime": 1669078320,
+        "sunsetTime": 1669119660,
+        "moonPhase": 0.95,
+        "precipIntensity": 0.0149,
+        "precipIntensityMax": 0.0508,
+        "precipIntensityMaxTime": 1669075320,
+        "precipProbability": 0.77,
+        "precipType": "rain",
+        "temperatureHigh": 71.71,
+        "temperatureHighTime": 1669101060,
+        "temperatureLow": 60.81,
+        "temperatureLowTime": 1669153500,
+        "apparentTemperatureHigh": 72.4,
+        "apparentTemperatureHighTime": 1669101480,
+        "apparentTemperatureLow": 61.78,
+        "apparentTemperatureLowTime": 1669153380,
+        "dewPoint": 64.57,
+        "humidity": 0.9,
+        "pressure": 1010.3,
+        "windSpeed": 10.57,
+        "windGust": 19.23,
+        "windGustTime": 1669107720,
+        "windBearing": 41,
+        "cloudCover": 0.85,
+        "uvIndex": 6,
+        "uvIndexTime": 1669099320,
+        "visibility": 10,
+        "ozone": 258.3,
+        "temperatureMin": 64.68,
+        "temperatureMinTime": 1669056360,
+        "temperatureMax": 71.71,
+        "temperatureMaxTime": 1669101060,
+        "apparentTemperatureMin": 65.34,
+        "apparentTemperatureMinTime": 1669057020,
+        "apparentTemperatureMax": 72.4,
+        "apparentTemperatureMaxTime": 1669101480
+      },
+      {
+        "time": 1669141800,
+        "summary": "Overcast throughout the day.",
+        "icon": "rain",
+        "sunriseTime": 1669164780,
+        "sunsetTime": 1669206060,
+        "moonPhase": 0.99,
+        "precipIntensity": 0.0031,
+        "precipIntensityMax": 0.016,
+        "precipIntensityMaxTime": 1669150680,
+        "precipProbability": 0.51,
+        "precipType": "rain",
+        "temperatureHigh": 73.97,
+        "temperatureHighTime": 1669188300,
+        "temperatureLow": 61.68,
+        "temperatureLowTime": 1669247940,
+        "apparentTemperatureHigh": 74.49,
+        "apparentTemperatureHighTime": 1669188900,
+        "apparentTemperatureLow": 62.88,
+        "apparentTemperatureLowTime": 1669248000,
+        "dewPoint": 65.23,
+        "humidity": 0.9,
+        "pressure": 1011.2,
+        "windSpeed": 6.67,
+        "windGust": 9.19,
+        "windGustTime": 1669188780,
+        "windBearing": 112,
+        "cloudCover": 0.93,
+        "uvIndex": 5,
+        "uvIndexTime": 1669186020,
+        "visibility": 9.972,
+        "ozone": 256.4,
+        "temperatureMin": 60.81,
+        "temperatureMinTime": 1669153500,
+        "temperatureMax": 73.97,
+        "temperatureMaxTime": 1669188300,
+        "apparentTemperatureMin": 61.78,
+        "apparentTemperatureMinTime": 1669153380,
+        "apparentTemperatureMax": 74.49,
+        "apparentTemperatureMaxTime": 1669188900
+      }
+    ]
+  },
+  "offset": 5.5
+}
+
+
+//desc- forecast
+[
+  {
+    "name": "longitude",
+    "dataType": "double",
+    "dummyValue": 14.2744310003,
+    "desc": "The longitude of the weather station in decimal format."
+  },
+  {
+    "name": "latitude",
+    "dataType": "double",
+    "dummyValue": 50.5082567070,
+    "desc": "The latitude of the weather station in decimal format."
+  },
+  {
+    "name": "timezone",
+    "dataType": "String",
+    "dummyValue": "Asia/Kolkata",
+    "desc": "The name of the timezone"
+  },
+  {
+    "name": "offset",
+    "dataType": "double",
+    "dummyValue": 5.5,
+    "desc": "The timezone offset of the station location in hours."
+  },
+  {
+   "name":"daily",
+   "dataType":"Map (key-value pairs)",
+   "desc":"It has the map containing all the forecast data.",
+   "valueParams":[
+      {
+        "name": "summary",
+        "dataType": "String",
+        "dummyValue": "Rain on Monday through next Wednesday.",
+        "desc": "The overall forecast summary in one line."
+      },
+      {
+        "name": "icon",
+        "dataType": "String",
+        "dummyValue": "rain",
+        "desc": "Weather icon ID"
+      },
+      {
+        "name":"data",
+        "dataType":"Map (key-value pairs)",
+        "desc":"The forecast data Map with day-no in key and weather data in value. The day-no gives as 0, 1 upto 7 with 0 as today, 1 as next day and so on.",
+        "valueParams":[
+          {
+            "name":"<DataDayNo>",
+            "desc":"Weather forecast data for the day-no. The day-no gives as 0, 1 upto 7 with 0 as today, 1 as next day and so on.",
+            "dataType":"Map (key-value pairs)",
+            "dummyValue":  {
+              "time": 1668537000,
+              "summary": "Partly cloudy throughout the day.",
+              "icon": "partly-cloudy-day",
+              "sunriseTime": 1668559740,
+              "sunsetTime": 1668601260,
+              "moonPhase": 0.75,
+              "precipIntensity": 0.0005,
+              "precipIntensityMax": 0.0033,
+              "precipIntensityMaxTime": 1668537000,
+              "precipProbability": 0.19,
+              "precipType": "rain",
+              "temperatureHigh": 78.96,
+              "temperatureHighTime": 1668585780,
+              "temperatureLow": 55.01,
+              "temperatureLowTime": 1668639960,
+              "apparentTemperatureHigh": 78.83,
+              "apparentTemperatureHighTime": 1668583860,
+              "apparentTemperatureLow": 55.5,
+              "apparentTemperatureLowTime": 1668639960,
+              "dewPoint": 61.96,
+              "humidity": 0.76,
+              "pressure": 1013.6,
+              "windSpeed": 6.13,
+              "windGust": 16.34,
+              "windGustTime": 1668605820,
+              "windBearing": 50,
+              "cloudCover": 0.6,
+              "uvIndex": 7,
+              "uvIndexTime": 1668579240,
+              "visibility": 10,
+              "ozone": 266,
+              "temperatureMin": 60.8,
+              "temperatureMinTime": 1668552480,
+              "temperatureMax": 78.96,
+              "temperatureMaxTime": 1668585780,
+              "apparentTemperatureMin": 62.14,
+              "apparentTemperatureMinTime": 1668552540,
+              "apparentTemperatureMax": 78.83,
+              "apparentTemperatureMaxTime": 1668583860
+            },
+            "valueParams":[
+              {
+                "name":"time",
+                "dataType":"int",
+                "dummyValue":1668553200,
+                "desc":"The time of weather data capture in timestamp format."
+              },
+              {
+                "name":"summary",
+                "dataType":"String",
+                "dummyValue":"Light rain starting in the afternoon",
+                "desc":"The overall forecast summary in one line."
+              },
+              {
+                "name":"icon",
+                "dataType":"String",
+                "dummyValue":"rain",
+                "desc":"Weather icon ID"
+              },
+              {
+                "name":"sunriseTime",
+                "dataType":"int",
+                "dummyValue":1668559740,
+                "desc":"The sunrise time at weather station in timestamp format."
+              },
+              {
+                "name":"sunsetTime",
+                "dataType":"int",
+                "dummyValue":1668559740,
+                "desc":"The sunset time at weather station in timestamp format."
+              },
+              {
+                "name":"moonPhase",
+                "dataType":"double",
+                "dummyValue":0.76,
+                "desc":"Moon phase. 0 and 1 are 'new moon', 0.25 is 'first quarter moon', 0.5 is 'full moon' and 0.75 is 'last quarter moon'. The periods in between are called 'waxing crescent', 'waxing gibous', 'waning gibous', and 'waning crescent', respectively."
+              },
+              {
+                "name":"precipIntensity",
+                "dataType":"double",
+                "dummyValue":0.0066,
+                "desc":"The overall forecast summary in one line."
+              },
+              {
+                "name":"precipIntensityMax",
+                "dataType":"double",
+                "dummyValue":0.0196,
+                "desc":"The overall forecast summary in one line."
+              },
+              {
+                "name":"precipIntensityMaxTime",
+                "dataType":"double",
+                "dummyValue":1668537000,
+                "desc":"The overall forecast summary in one line."
+              },
+              {
+                "name":"precipProbability",
+                "dataType":"double",
+                "dummyValue":0.88,
+                "desc":"The overall forecast summary in one line."
+              },
+              {
+                "name":"precipType",
+                "dataType":"String",
+                "dummyValue":"rain",
+                "desc":"The overall forecast summary in one line."
+              },
+              {
+                "name":"temperatureHigh",
+                "dataType":"double",
+                "dummyValue":52.29,
+                "desc":"The max temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"temperatureHighTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of max temperature in the day."
+              },
+              {
+                "name":"temperatureLow",
+                "dataType":"double",
+                "dummyValue":39.59,
+                "desc":"The min temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"temperatureLowTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of min temperature in the day."
+              },
+              {
+                "name":"apparentTemperatureHigh",
+                "dataType":"double",
+                "dummyValue":51.79,
+                "desc":"The human perception max temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"apparentTemperatureHighTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of apparent max temperature in the day."
+              },
+              {
+                "name":"apparentTemperatureLow",
+                "dataType":"double",
+                "dummyValue":35.63,
+                "desc":"The human perception min temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"apparentTemperatureLowTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of apparent min temperature in the day."
+              },
+              {
+                "name":"dewPoint",
+                "dataType":"double",
+                "dummyValue":40.17,
+                "desc":"The current dew point at the location."
+              },
+              {
+                "name":"humidity",
+                "dataType":"double",
+                "dummyValue":0.87,
+                "desc":"The current humidity ratio at the location."
+              },
+              {
+                "name":"pressure",
+                "dataType":"double",
+                "dummyValue":1007.4,
+                "desc":"The current barometric pressure at the location."
+              },
+              {
+                "name":"windSpeed",
+                "dataType":"double",
+                "dummyValue":2.1,
+                "desc":"The current wind speed in m/s at the location."
+              },
+              {
+                "name":"windGust",
+                "dataType":"double",
+                "dummyValue":8.2,
+                "desc":"The current wind gust in m/s at the location."
+              },
+              {
+                "name":"windGustTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of wind gust data capture."
+              },
+              {
+                "name":"windBearing",
+                "dataType":"int",
+                "dummyValue":67,
+                "desc":"The current wind bearing (in degrees) at the location."
+              },
+              {
+                "name":"cloudCover",
+                "dataType":"double",
+                "dummyValue":0.93,
+                "desc":"Current cloud cover probability ratio."
+              },
+              {
+                "name":"uvIndex",
+                "dataType":"int",
+                "dummyValue":1,
+                "desc":"The current UV index"
+              },
+              {
+                "name":"uvIndexTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The UV index data capture time"
+              },
+              {
+                "name":"visibility",
+                "dataType":"int",
+                "dummyValue":10,
+                "desc":"Average visibility, metres. The maximum value of the visibility is 10km."
+              },
+              {
+                "name":"ozone",
+                "dataType":"int",
+                "dummyValue":279,
+                "desc":"The current ozone value at the location. Unit is dobson unit."
+              },
+              {
+                "name":"temperatureMax",
+                "dataType":"double",
+                "dummyValue":52.29,
+                "desc":"The max temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"temperatureMaxTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of max temperature in the day."
+              },
+              {
+                "name":"temperatureMin",
+                "dataType":"double",
+                "dummyValue":39.59,
+                "desc":"The min temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"temperatureMinTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of min temperature in the day."
+              },
+              {
+                "name":"apparentTemperatureMax",
+                "dataType":"double",
+                "dummyValue":51.79,
+                "desc":"The human perception max temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"apparentTemperatureMaxTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of apparent max temperature in the day."
+              },
+              {
+                "name":"apparentTemperatureMin",
+                "dataType":"double",
+                "dummyValue":35.63,
+                "desc":"The human perception min temperature in the day. Unit is Fahrenheit."
+              },
+              {
+                "name":"apparentTemperatureMinTime",
+                "dataType":"int",
+                "dummyValue":1668537000,
+                "desc":"The time of occurance of apparent min temperature in the day."
+              }
+            ]
+          }
+        ]
+      }
+   ]
+  }
+]
+
+//desc- present
+[
+  {
+    "name": "coord",
+    "dataType": "Map (key-value pairs)",
+    "dummyValue": {
+      "lon": 14.2744310003,
+      "lat":50.5082567070
+    },
+    "valueParams":[          
+      {
+        "name": "lon",
+        "dataType": "double",
+        "dummyValue": 14.2744310003,
+        "desc": "The longitude of the location in decimal format."
+      },
+      {
+        "name": "lat",
+        "dataType": "double",
+        "dummyValue": 50.5082567070,
+        "desc": "The latitude of the location in decimal format."
+      }
+    ],
+    "desc": "The coordinates of the nearest weather station."
+  },
+  {
+    "name": "base",
+    "dataType": "String",
+    "dummyValue": "stations",
+    "desc": "Internal parameter"
+  },
+  {
+    "name": "dt",
+    "dataType": "int",
+    "dummyValue": 1560350645,
+    "desc": "Time of data calculation, unix, UTC"
+  },
+  {
+    "name": "timezone",
+    "dataType": "int",
+    "dummyValue": -25200,
+    "desc": "Shift in seconds from UTC"
+  },
+  {
+    "name": "name",
+    "dataType": "String",
+    "dummyValue": "Mountain View",
+    "desc": "City name"
+  },
+  {
+    "name": "id",
+    "dataType": "int",
+    "dummyValue": 420006353,
+    "desc": "City ID"
+  },
+  {
+    "name": "cod",
+    "dataType": "int",
+    "dummyValue": 200,
+    "desc": "Internal parameter"
+  },
+  {
+    "name": "weather",
+    "dataType": "Map (key-value pairs)",
+    "dummyValue": {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01d"
+    },
+    "valueParams":[          
+      {
+        "name": "id",
+        "dataType": "int",
+        "dummyValue": 800,
+        "desc": "Weather condition ID"
+      },
+      {
+        "name": "main",
+        "dataType": "String",
+        "dummyValue": "Clear",
+        "desc": "Group of weather parameters (Rain, Snow, Extreme etc.)"
+      },
+      {
+        "name": "description",
+        "dataType": "String",
+        "dummyValue": "clear sky",
+        "desc": "Weather condition within the group."
+      },
+      {
+        "name": "icon",
+        "dataType": "String",
+        "dummyValue": "01d",
+        "desc": "Weather icon ID"
+      }
+    ],
+    "desc": "Weather Summary with condition codes"
+  },
+  {
+    "name": "main",
+    "dataType": "Map (key-value pairs)",
+    "dummyValue": {
+      "temp": 282.55,
+      "feels_like": 281.86,
+      "temp_min": 280.37,
+      "temp_max": 284.26,
+      "pressure": 1023,
+      "humidity": 100
+    },
+    "valueParams":[          
+      {
+        "name": "temp",
+        "dataType": "double",
+        "dummyValue": 282.55,
+        "desc": "Temperature in Kelvin."
+      },
+      {
+        "name": "feels_like",
+        "dataType": "double",
+        "dummyValue": 281.86,
+        "desc": "Temperature. This temperature parameter accounts for the human perception of weather. Unit is Kelvin."
+      },
+      {
+        "name": "temp_min",
+        "dataType": "double",
+        "dummyValue": 280.37,
+        "desc": " Minimum temperature at the moment. This is minimal currently observed temperature (within large megalopolises and urban areas). Unit is Kelvin."
+      },
+      {
+        "name": "temp_max",
+        "dataType": "double",
+        "dummyValue": 284.26,
+        "desc": "Maximum temperature at the moment. This is maximal currently observed temperature (within large megalopolises and urban areas). Unit is Kelvin."
+      },
+      {
+        "name": "pressure",
+        "dataType": "int",
+        "dummyValue": 1023,
+        "desc": "Atmospheric pressure (on the sea level, if there is no sea_level or grnd_level data), hPa"
+      },
+      {
+        "name": "humidity",
+        "dataType": "int",
+        "dummyValue": 100,
+        "desc": "Humidity in %"
+      }
+    ],
+    "desc": "Main/primary weather parameters in Map datatype."
+  },
+  {
+    "name": "wind",
+    "dataType": "Map (key-value pairs)",
+    "dummyValue": {
+      "speed": 1.5,
+      "deg": 350
+    },
+    "valueParams":[          
+      {
+        "name": "speed",
+        "dataType": "double",
+        "dummyValue": 1.5,
+        "desc": "Wind speed. Unit int meter/sec."
+      },
+      {
+        "name": "deg",
+        "dataType": "int",
+        "dummyValue": 350,
+        "desc": "Wind direction, degrees (meteorological)"
+      }
+    ],
+    "desc": "The wind speed and direction values."
+  },
+  {
+    "name": "clouds",
+    "dataType": "Map (key-value pairs)",
+    "dummyValue": {
+      "all":1
+    },
+    "valueParams":[          
+      {
+        "name": "all",
+        "dataType": "int",
+        "dummyValue": 1,
+        "desc": "Cloudiness in %"
+      }
+    ],
+    "desc": "Cloudiness in %"
+  },
+  {
+    "name": "sys",
+    "dataType": "Map (key-value pairs)",
+    "dummyValue": {
+      "type": 1,
+      "id": 5122,
+      "message": 0.0139,
+      "country": "US",
+      "sunrise": 1560343627,
+      "sunset": 1560396563
+    },
+    "valueParams":[          
+      {
+        "name": "type",
+        "dataType": "int",
+        "dummyValue": 1,
+        "desc": "Internal parameter"
+      },
+      {
+        "name": "id",
+        "dataType": "int",
+        "dummyValue": 5122,
+        "desc": "Internal parameter"
+      },
+      {
+        "name": "message",
+        "dataType": "double",
+        "dummyValue": 0.0139,
+        "desc": "Internal parameter"
+      },
+      {
+        "name": "country",
+        "dataType": "String",
+        "dummyValue": "US",
+        "desc": "Country 2 letter code like IN, US etc."
+      },
+      {
+        "name": "sunrise",
+        "dataType": "int",
+        "dummyValue": 1560343627,
+        "desc": "Sunrise time, unix, UTC"
+      },
+      {
+        "name": "sunset",
+        "dataType": "int",
+        "dummyValue": 1560396563,
+        "desc": "Sunset time, unix, UTC"
+      }
+    ],
+    "desc": "Some system data"
+  }
+]
+
+
+//dummy data- present
+{
+  "coord": {
+    "lon": 77.7639,
+    "lat": 12.9756
+  },
+  "weather": [
+    {
+      "id": 701,
+      "main": "Mist",
+      "description": "mist",
+      "icon": "50d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 299.47,
+    "feels_like": 299.47,
+    "temp_min": 298.33,
+    "temp_max": 301.49,
+    "pressure": 1018,
+    "humidity": 65
+  },
+  "visibility": 3000,
+  "wind": {
+    "speed": 2.57,
+    "deg": 40
+  },
+  "clouds": {
+    "all": 40
+  },
+  "dt": 1668579055,
+  "sys": {
+    "type": 1,
+    "id": 9205,
+    "country": "IN",
+    "sunrise": 1668559681,
+    "sunset": 1668601171
+  },
+  "timezone": 19800,
+  "id": 1269936,
+  "name": "Hoskote",
+  "cod": 200
+}
+
+
+//dummy data - history
+{
+  "20221104": {
+    "cloud_cover": 90,
+    "humidity": 86,
+    "max_temp": 296.33,
+    "min_temp": 296.33,
+    "pressure": 1015,
+    "station": "Hoskote",
+    "wind_deg": 79,
+    "wind_speed": 3.58
+  },
+  "20221105": {
+    "cloud_cover": 99,
+    "humidity": 97,
+    "max_temp": 293.33,
+    "min_temp": 293.33,
+    "pressure": 1015,
+    "station": "Hoskote",
+    "wind_deg": 91,
+    "wind_speed": 2.96
+  },
+  "20221114": {
+    "cloud_cover": 40,
+    "humidity": 83,
+    "max_temp": 300.22,
+    "min_temp": 294.33,
+    "pressure": 1020,
+    "station": "Hoskote",
+    "wind_deg": 50,
+    "wind_speed": 2.57
+  }
+}
+
+
+//field data
+{
+  "CenterLat": 50.50679194429229,
+  "CenterLatLarge": 50.50679194429229,
+  "CenterLong": 14.280552814060654,
+  "CenterLongLarge": 14.280552814060654,
+  "Coordinates": {
+    "P_1": {
+      "Latitude": 50.509171005120145,
+      "Longitude": 14.274860153744537
+    },
+    "P_2": {
+      "Latitude": 50.50956603877697,
+      "Longitude": 14.277074239540681
+    },
+    "P_3": {
+      "Latitude": 50.509993050527804,
+      "Longitude": 14.279200222992845
+    },
+    "a": {
+      "Latitude": 50.508256707065996,
+      "Longitude": 14.274431000302155
+    }
+  },
+  "Email": "support@farmonaut.com",
+  "Expiring": "no",
+  "FailedDays": {
+    "20200905": "yes",
+    "20200925": "yes"
+  },
+  "FieldAddress": "Vrutice 85, 411 47 Vrutice, Czechia",
+  "FieldArea": 396800,
+  "FieldID": "1600502365642",
+  "FieldLatLen": 0.016376154108932894,
+  "FieldLatLenLarge": 0.03275230837586207,
+  "FieldLongLen": 0.025749206542965197,
+  "FieldLongLenLarge": 0.051498413085930395,
+  "FieldMaxLat": 50.510218206844385,
+  "FieldMaxLong": 14.286727673381936,
+  "FieldMinLat": 50.5033656817402,
+  "FieldMinLong": 14.274377954739371,
+  "GenTif": "yes",
+  "hUnits": 119,
+  "Health": {
+    "evi": {
+      "20200912": "60",
+      "20200917": "41"
+    },
+    "ndre": {
+      "20200912": "32",
+      "20200917": "23"
+    },
+    "ndvi": {
+      "20200912": "40",
+      "20200917": "27"
+    },
+    "ndwi": {
+      "20200912": "29",
+      "20200917": "41"
+    },
+    "soc": {
+      "20200912": "4",
+      "20200917": "3"
+    },
+    "vari": {
+      "20200912": "24",
+      "20200917": "32"
+    }
+  },
+  "Yield": {
+    "20200912": "24",
+    "20200917": "32"
+  },
+  "Name": "Farmonaut Support",
+  "OrderDate": "19-September-2020",
+  "Paid": "Yes",
+  "PaymentType": "3",
+  "SensedDays": {
+    "20200912": "yes",
+    "20200917": "yes"
+  },
+  "SARDays": {
+    "20200912": "yes",
+    "20200917": "yes"
+  },
+  "UID": "BpkwnSJdwHTjKhdm8ZWKJBO1HUn2",
+  "URI": "https://lh6.googleusercontent.com/-lsH7M4Gr5wg/AAAAAAAAAAI/AAAAAAAAABM/eNUASvhfjs4/s96-c/photo.jpg",
+  "Weather": {
+    "20201028": {
+      "cloud_cover": 100,
+      "humidity": 79,
+      "max_temp": 283.71,
+      "min_temp": 274.82,
+      "pressure": 1014,
+      "station": "Polepy",
+      "wind_deg": 90,
+      "wind_speed": 0.89
+    }
+  }
+}
+
