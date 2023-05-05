@@ -1935,6 +1935,206 @@ return response;
                 "desc": "It tells if the satellite monitoring plan of the field is expiring soon or not. The possible values are 'yes', 'no' or null."
               },
               {
+                "name": "Expired",
+                "dataType": "String",
+                "dummyValue": "no",
+                "desc": "It tells if the satellite monitoring plan of the field is expired or not. The possible values are 'yes', 'no' or null (null also means the key 'Expired' is not present in the response)."
+              },
+              {
+                "name": "Paused",
+                "dataType": "String",
+                "dummyValue": "no",
+                "desc": "It tells if the satellite monitoring plan of the field is paused or not. The possible values are 'yes', 'no' or null (null also means the key 'Paused' is not present in the response)."
+              },
+              {
+                "name": "IndexBreakdown-",
+                "dataType": "Map (key-value pairs)",
+                "dummyValue": {
+                  "20230428": {
+                    "avi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                    "bsi": [
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "1077",
+                      "11231",
+                      "30492",
+                      "168781"
+                    ],
+                    "evi": [
+                      "20628",
+                      "233",
+                      "2415",
+                      "3870",
+                      "5703",
+                      "6197",
+                      "7216",
+                      "7827",
+                      "8001",
+                      "149491"
+                    ],
+                    "ndmi": ["209863", "1600", "116", "0", "0", "0", "0", "0", "0", "0"],
+                    "ndre": [
+                      "40384",
+                      "127931",
+                      "38667",
+                      "4597",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "ndvi": [
+                      "37504",
+                      "91737",
+                      "62438",
+                      "15886",
+                      "4015",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "ndwi": [
+                      "114955",
+                      "75589",
+                      "18039",
+                      "2968",
+                      "29",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "savi": [
+                      "5615",
+                      "65842",
+                      "60634",
+                      "48502",
+                      "19756",
+                      "7681",
+                      "3142",
+                      "407",
+                      "0",
+                      "0"
+                    ],
+                    "si": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "211580"],
+                    "vari": ["209834", "1746", "0", "0", "0", "0", "0", "0", "0", "0"],
+                    "vssi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+                  }
+                },
+                "valueParams": [
+                  {
+                    "name": "{SatelliteVisitDate}",
+                    "dataType": "Map (key-value pairs)",
+                    "dummyValue": {
+                      "avi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                      "bsi": [
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "1077",
+                        "11231",
+                        "30492",
+                        "168781"
+                      ],
+                      "evi": [
+                        "20628",
+                        "233",
+                        "2415",
+                        "3870",
+                        "5703",
+                        "6197",
+                        "7216",
+                        "7827",
+                        "8001",
+                        "149491"
+                      ],
+                      "ndmi": ["209863", "1600", "116", "0", "0", "0", "0", "0", "0", "0"],
+                      "ndre": [
+                        "40384",
+                        "127931",
+                        "38667",
+                        "4597",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                      ],
+                      "ndvi": [
+                        "37504",
+                        "91737",
+                        "62438",
+                        "15886",
+                        "4015",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                      ],
+                      "ndwi": [
+                        "114955",
+                        "75589",
+                        "18039",
+                        "2968",
+                        "29",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                      ],
+                      "savi": [
+                        "5615",
+                        "65842",
+                        "60634",
+                        "48502",
+                        "19756",
+                        "7681",
+                        "3142",
+                        "407",
+                        "0",
+                        "0"
+                      ],
+                      "si": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "211580"],
+                      "vari": ["209834", "1746", "0", "0", "0", "0", "0", "0", "0", "0"],
+                      "vssi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+                    },
+                    "valueParams": [
+                      {
+                        "name": "{ImageType}",
+                        "dataType": "Array",
+                        "dummyValue": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                        "desc": "The data for a image-type is present in the image-type key as list of area value under index-range starting from 0-0.1, 0.1-0.2, 0.2-0.3 ... 0.9-1 (10 values). The supported image-type values can be found here.",
+                        "references": ["imageTypeList"]
+                      },
+                    ],
+                    "desc": "The data for a satellite visit date is present in the visit-date key. The key format is 'yyyymmdd'.",
+                  }
+                ],
+                "desc": "It tells the area (in sq m) under different index ranges for all image types at satellite visit dates. 'Area under different index ranges' mean what's the area for 0-0.1 index value, 0.1-0.2 index value and so on, in this order only upto 1 index value."
+              },
+              {
+                "name": "Language",
+                "dataType": "String",
+                "dummyValue": "hi,en",
+                "desc": "It tells the languages set for PDF report as a comma seperated language code string.",
+                "references": ["langCodesList"],
+              },
+              {
                 "name": "FailedDays",
                 "dataType": "Map (key-value pairs)",
                 "dummyValue": {
@@ -2350,6 +2550,87 @@ return response;
                   "20200917": "32"
                 }
               },
+              "IndexBreakdown": {
+                "20230428": {
+                  "avi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                  "bsi": [
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "1077",
+                    "11231",
+                    "30492",
+                    "168781"
+                  ],
+                  "evi": [
+                    "20628",
+                    "233",
+                    "2415",
+                    "3870",
+                    "5703",
+                    "6197",
+                    "7216",
+                    "7827",
+                    "8001",
+                    "149491"
+                  ],
+                  "ndmi": ["209863", "1600", "116", "0", "0", "0", "0", "0", "0", "0"],
+                  "ndre": [
+                    "40384",
+                    "127931",
+                    "38667",
+                    "4597",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "ndvi": [
+                    "37504",
+                    "91737",
+                    "62438",
+                    "15886",
+                    "4015",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "ndwi": [
+                    "114955",
+                    "75589",
+                    "18039",
+                    "2968",
+                    "29",
+                    "0",
+                    "0",
+                    "0",
+                    "0",
+                    "0"
+                  ],
+                  "savi": [
+                    "5615",
+                    "65842",
+                    "60634",
+                    "48502",
+                    "19756",
+                    "7681",
+                    "3142",
+                    "407",
+                    "0",
+                    "0"
+                  ],
+                  "si": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "211580"],
+                  "vari": ["209834", "1746", "0", "0", "0", "0", "0", "0", "0", "0"],
+                  "vssi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+                }
+              },
               "Yield": {
                 "20200912": "24",
                 "20200917": "32"
@@ -2459,7 +2740,200 @@ return response;
                 "name": "Expiring",
                 "dataType": "String",
                 "dummyValue": "no",
-                "desc": "It tells if the satellite monitoring plan of the field is expiring soon or not. The possible values are 'yes', 'no' or null."
+                "desc": "It tells if the satellite monitoring plan of the field is expiring soon or not. The possible values are 'yes', 'no' or null (null also means the key 'Expiring' is not present in the response)."
+              },
+              {
+                "name": "Expired",
+                "dataType": "String",
+                "dummyValue": "no",
+                "desc": "It tells if the satellite monitoring plan of the field is expired or not. The possible values are 'yes', 'no' or null (null also means the key 'Expired' is not present in the response)."
+              },
+              {
+                "name": "Paused",
+                "dataType": "String",
+                "dummyValue": "no",
+                "desc": "It tells if the satellite monitoring plan of the field is paused or not. The possible values are 'yes', 'no' or null (null also means the key 'Paused' is not present in the response)."
+              },
+              {
+                "name": "IndexBreakdown-",
+                "dataType": "Map (key-value pairs)",
+                "dummyValue": {
+                  "20230428": {
+                    "avi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                    "bsi": [
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "1077",
+                      "11231",
+                      "30492",
+                      "168781"
+                    ],
+                    "evi": [
+                      "20628",
+                      "233",
+                      "2415",
+                      "3870",
+                      "5703",
+                      "6197",
+                      "7216",
+                      "7827",
+                      "8001",
+                      "149491"
+                    ],
+                    "ndmi": ["209863", "1600", "116", "0", "0", "0", "0", "0", "0", "0"],
+                    "ndre": [
+                      "40384",
+                      "127931",
+                      "38667",
+                      "4597",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "ndvi": [
+                      "37504",
+                      "91737",
+                      "62438",
+                      "15886",
+                      "4015",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "ndwi": [
+                      "114955",
+                      "75589",
+                      "18039",
+                      "2968",
+                      "29",
+                      "0",
+                      "0",
+                      "0",
+                      "0",
+                      "0"
+                    ],
+                    "savi": [
+                      "5615",
+                      "65842",
+                      "60634",
+                      "48502",
+                      "19756",
+                      "7681",
+                      "3142",
+                      "407",
+                      "0",
+                      "0"
+                    ],
+                    "si": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "211580"],
+                    "vari": ["209834", "1746", "0", "0", "0", "0", "0", "0", "0", "0"],
+                    "vssi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+                  }
+                },
+                "valueParams": [
+                  {
+                    "name": "{SatelliteVisitDate}",
+                    "dataType": "Map (key-value pairs)",
+                    "dummyValue": {
+                      "avi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                      "bsi": [
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "1077",
+                        "11231",
+                        "30492",
+                        "168781"
+                      ],
+                      "evi": [
+                        "20628",
+                        "233",
+                        "2415",
+                        "3870",
+                        "5703",
+                        "6197",
+                        "7216",
+                        "7827",
+                        "8001",
+                        "149491"
+                      ],
+                      "ndmi": ["209863", "1600", "116", "0", "0", "0", "0", "0", "0", "0"],
+                      "ndre": [
+                        "40384",
+                        "127931",
+                        "38667",
+                        "4597",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                      ],
+                      "ndvi": [
+                        "37504",
+                        "91737",
+                        "62438",
+                        "15886",
+                        "4015",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                      ],
+                      "ndwi": [
+                        "114955",
+                        "75589",
+                        "18039",
+                        "2968",
+                        "29",
+                        "0",
+                        "0",
+                        "0",
+                        "0",
+                        "0"
+                      ],
+                      "savi": [
+                        "5615",
+                        "65842",
+                        "60634",
+                        "48502",
+                        "19756",
+                        "7681",
+                        "3142",
+                        "407",
+                        "0",
+                        "0"
+                      ],
+                      "si": ["0", "0", "0", "0", "0", "0", "0", "0", "0", "211580"],
+                      "vari": ["209834", "1746", "0", "0", "0", "0", "0", "0", "0", "0"],
+                      "vssi": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"]
+                    },
+                    "valueParams": [
+                      {
+                        "name": "{ImageType}",
+                        "dataType": "Array",
+                        "dummyValue": ["211580", "0", "0", "0", "0", "0", "0", "0", "0", "0"],
+                        "desc": "The data for a image-type is present in the image-type key as list of area value under index-range starting from 0-0.1, 0.1-0.2, 0.2-0.3 ... 0.9-1 (10 values). The supported image-type values can be found here.",
+                        "references": ["imageTypeList"]
+                      },
+                    ],
+                    "desc": "The data for a satellite visit date is present in the visit-date key. The key format is 'yyyymmdd'.",
+                  }
+                ],
+                "desc": "It tells the area (in sq m) under different index ranges for all image types at satellite visit dates. 'Area under different index ranges' mean what's the area for 0-0.1 index value, 0.1-0.2 index value and so on, in this order only upto 1 index value."
               },
               {
                 "name": "Language",
@@ -2500,7 +2974,7 @@ return response;
                     "desc": "The value of this Map can be ignored, it's just meant to get the date value from the key."
                   }
                 ],
-                "desc": "The satellite visit dates of the farm. The value is in form of a Map with date as the key and value as 'yes' String."
+                "desc": "The satellite visit dates of the farm. The value is in form of a Map with date as the key and value as 'yes' String or a Map of internal values."
               },
               {
                 "name": "SARDays",
@@ -4277,7 +4751,7 @@ return response;
       {
         "name": "Get Latest Weather Data",
         "desc": "It returns latest weather data for the field.",
-        "endpoint": "/getPresentWeatherData",
+        "endpoint": "/getPresentWeather",
         "isDeprecated": false,
         "body": [
           {
